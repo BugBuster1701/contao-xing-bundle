@@ -1,0 +1,27 @@
+/* Style sheet demo */
+.mod_xinglist
+{
+	margin:10px auto;
+	text-align:center;
+}
+.mod_xinglist h1
+{
+	margin:0px 12px 10px 12px;
+}
+.mod_xinglist .xing_category
+{
+	margin:10px auto 4px auto;
+	text-align:center;
+	font-weight:bold;
+}
+.mod_xinglist .xing_image
+{
+	margin:0px auto 0px auto;
+	text-align:center;
+}
+.mod_xinglist .xing_profile
+{
+	margin:0px auto 10px auto;
+	text-align:center;
+	font-style:italic;
+}

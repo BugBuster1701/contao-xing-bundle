@@ -1,0 +1,45 @@
+{
+	"name":"bugbuster/xing_contao_bundle",
+	"description":"Contao 4 Xing Bundle",
+	"keywords":["contao","xing","bundle"],
+	"type":"symfony-bundle",
+	"homepage":"http://contao.ninja",
+	"license":"LGPL-3.0+",
+	"authors":[
+		{
+			"name":"Glen Langer",
+			"homepage":"http://contao.ninja",
+			"role":"Developer"
+		}
+	],
+	"support":{
+		"issues":"https://github.com/BugBuster1701/xing_contao_bundle/issues",
+		"irc":"irc://irc.freenode.org/contao.dev",
+		"source":"https://github.com/BugBuster1701/xing_contao_bundle",
+		"wiki":"http://de.contaowiki.org/Xing",
+		"forum":"https://community.contao.org/de/forumdisplay.php?119"
+	},
+	"require":{
+		"php": ">=5.4.0",
+		"symfony/framework-bundle": "~2.7",
+		"contao/core-bundle": "~4.0"
+	},
+	"conflict": {
+      "contao/core": "*"
+  },
+	"autoload": {
+      "psr-4": {
+          "BugBuster\\XingBundle\\": "src/"
+      }
+  },
+	"extra":{
+		"contao":{
+			"transifex": {
+				"project": "contao4-xing",
+				"prefix": "master-",
+				"languages_cto": "src/Resources/contao/languages",
+				"languages_tx": ".tx"
+			}
+		}
+	}
+}
