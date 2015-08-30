@@ -1,0 +1,4 @@
+.git/
+.settings
+# Transifex
+/.tx/
