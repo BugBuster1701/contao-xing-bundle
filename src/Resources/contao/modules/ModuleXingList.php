@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 /**
  * Contao Open Source CMS, Copyright (C) 2005-2015 Leo Feyer
@@ -17,10 +17,10 @@
 namespace BugBuster\Xing;
 
 /**
- * Class ModuleXingList 
+ * Class ModuleXingList
  *
- * @copyright  Glen Langer 2008..2015 
- * @author     Glen Langer (BugBuster) 
+ * @copyright  Glen Langer 2008..2015
+ * @author     Glen Langer (BugBuster)
  * @package    Xing
  */
 class ModuleXingList extends \Module
@@ -37,13 +37,13 @@ class ModuleXingList extends \Module
 	 * @var array
 	 */
 	protected $xing_category = array();
-	
+
 	/**
 	 * Xing Image Link
 	 * @var string
 	 */
 	protected $xing_images = '';
-	
+
 	/**
 	 * Current version of the class.
 	 */
@@ -77,7 +77,7 @@ class ModuleXingList extends \Module
 		}
 
 		$this->xing_category = deserialize($this->xing_categories, true);
-		
+
 		// Return if there are no categories
 		if (!is_array($this->xing_category) || !is_numeric($this->xing_category[0]))
 		{
@@ -95,41 +95,41 @@ class ModuleXingList extends \Module
 	{
 		$objXing = $this->Database->prepare("SELECT tl_xing.id AS id, xingprofil, xinglayout, xingtarget, title"
 		                                  ." FROM tl_xing LEFT JOIN tl_xing_category ON (tl_xing_category.id=tl_xing.pid)"
-		                                  ." WHERE pid IN(" . implode(',', $this->xing_category) . ")" . (!BE_USER_LOGGED_IN ? " AND published=?" : "") 
+		                                  ." WHERE pid IN(" . implode(',', $this->xing_category) . ")" . (!BE_USER_LOGGED_IN ? " AND published=?" : "")
 		                                  ." ORDER BY title, sorting")
 								  ->execute(1);
 		if ($objXing->numRows < 1)
 		{
 			//mod_xing_empty
 			$this->strTemplate = 'mod_xing_empty';
-            $this->Template = new \FrontendTemplate($this->strTemplate); 
+            $this->Template = new \FrontendTemplate($this->strTemplate);
             $this->log('mod_xing_empty, numRows < 1', 'XingList', TL_ERROR);
 			return;
 		}
-        
+
 		$arrXing = array();
 		$XingImage = new XingImage(); // classes/XingImage.php
-		
+
 		while ($objXing->next())
 		{
 		    $this->xing_images = $XingImage->getXingImageLink($objXing->xinglayout);
-    		
-    		if (($this->xing_template != $this->strTemplate) && ($this->xing_template == 'mod_xing_list_company')) 
+
+    		if (($this->xing_template != $this->strTemplate) && ($this->xing_template == 'mod_xing_list_company'))
     		{
-    			$this->xing_images = preg_replace('/title="[^"]*"/', 'title="Company"', $this->xing_images);  
+    			$this->xing_images = preg_replace('/title="[^"]*"/', 'title="Company"', $this->xing_images);
     		}
 
 			if ($GLOBALS['objPage']->outputFormat == 'html5')
 			{
-				$this->xing_images = \String::toHtml5($this->xing_images);
+				$this->xing_images = \StringUtil::toHtml5($this->xing_images);
 				$arrXing[] = array
 				(
 	                'xingprofil' => trim($objXing->xingprofil),
 					'xinglayout' => $this->xing_images,
 					'xingtarget' => ($objXing->xingtarget == '1') ? '' : ' target="_blank"'
 				);
-			} 
-			else 
+			}
+			else
 			{
 				$arrXing[] = array
 				(
@@ -139,13 +139,12 @@ class ModuleXingList extends \Module
 				);
 			}
 		} // while
-		if (($this->xing_template != $this->strTemplate) && ($this->xing_template != '')) 
+		if (($this->xing_template != $this->strTemplate) && ($this->xing_template != ''))
 		{
 	        $this->strTemplate = $this->xing_template;
-	        $this->Template = new \FrontendTemplate($this->strTemplate); 
+	        $this->Template = new \FrontendTemplate($this->strTemplate);
 		}
 		$this->Template->category = $objXing->title;
 		$this->Template->xing = $arrXing;
 	} // compile
 } // class
-
