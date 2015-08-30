@@ -1,2 +1,3 @@
-# xing_contao_bundle
-Contao 4 XING bundle
+# Contao 4 XING Bundle
+
+This Contao 4 extension is still in development.
