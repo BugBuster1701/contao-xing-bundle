@@ -63,16 +63,8 @@ class ModuleXingList extends \Module
 			$objTemplate->title = $this->headline;
             $objTemplate->id = $this->id;
             $objTemplate->link = $this->name;
-            if (version_compare(VERSION , '2.99', '>'))
-			{
-			   // Code für Versionen ab 3.0.0
-			   $objTemplate->href = 'contao/main.php?do=themes&amp;table=tl_module&amp;act=edit&amp;id=' . $this->id;
-			}
-			else
-			{
-			   // Code für Versionen < 3.0 beta
-		       $this->Template->warning = $GLOBALS['TL_LANG']['XingList']['warning'];
-			}
+            // Code für Versionen ab 3.0.0
+            $objTemplate->href = 'contao/main.php?do=themes&amp;table=tl_module&amp;act=edit&amp;id=' . $this->id;
 			return $objTemplate->parse();
 		}
 
