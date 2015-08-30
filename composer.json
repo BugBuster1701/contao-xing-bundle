@@ -28,13 +28,13 @@
 		"contao/core": "*"
 	},
 	"autoload": {
-    	"psr-4": {
-        	"BugBuster\\XingBundle\\": "src/"
-      	}
+		"psr-4": {
+			"BugBuster\\XingBundle\\": "src/"
+		}
   	},
 	"extra":{
 		"branch-alias": {
-    		"dev-develop": "1.0.x-dev"
+			"dev-develop": "1.0.x-dev"
 		},
 		"contao":{
 			"transifex": {
