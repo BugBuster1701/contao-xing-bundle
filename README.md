@@ -4,17 +4,20 @@ This Contao 4 extension is still in development.
 
 ## Installation (vorläufig)
 
+Download ZIP: https://github.com/BugBuster1701/xing_contao_bundle/archive/develop.zip,
+auspacken und das Verzeichnis `xing_contao_bundle-develop` umbenennen nach `xing_contao_bundle`.
+
 In das Contao Installationsverzeichnis wechseln, ein Verzeichnis anlegen:
 
 ```bash
 mkdir vendor/bugbuster
 ```
 
-Kopiere das Verzeichnis `xing_contao_bundle` nach `vendor/bugbuster`.
+Kopiere das umbenannte Verzeichnis `xing_contao_bundle` nach `vendor/bugbuster`.
 Damit muss existieren: `vendor/bugbuster/xing_contao_bundle/`
 
 In `vendor/composer/autoload_psr4.php`
-Zeile am Ende hinzufügen, ein Komma am Ende der alten letzten Zeile nicht vergessen
+Zeile am Ende hinzufügen, ein Komma am Ende der alten letzten Zeile nicht vergessen.
 
 ```php
 'BugBuster\\XingBundle\\' => array($vendorDir . '/bugbuster/xing_contao_bundle/src')
