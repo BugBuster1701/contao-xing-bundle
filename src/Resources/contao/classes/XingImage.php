@@ -33,9 +33,9 @@ class XingImage
 	{
 	    $arrXingImageDefinitions= array();
 	    
-	    if (file_exists(TL_ROOT . "/system/modules/xing/config/xing_image_definitions.php"))
+	    if (file_exists(TL_ROOT . "/vendor/bugbuster/xing_contao_bundle/src/Resources/contao/config/xing_image_definitions.php"))
 	    {
-	        include(TL_ROOT . "/system/modules/xing/config/xing_image_definitions.php");
+	        include(TL_ROOT . "/vendor/bugbuster/xing_contao_bundle/src/Resources/contao/config/xing_image_definitions.php");
 	    }
 	    
 	    if (isset($arrXingImageDefinitions[$xinglayout])) 
