@@ -15,7 +15,10 @@ Damit muss existieren: `vendor/bugbuster/xing_contao_bundle/`
 
 In `vendor/composer/autoload_psr4.php`
 Zeile am Ende hinzufügen, ein Komma am Ende der alten letzten Zeile nicht vergessen
-`'BugBuster\\XingBundle\\' => array($vendorDir . '/bugbuster/xing_contao_bundle/src')`
+
+```php
+'BugBuster\\XingBundle\\' => array($vendorDir . '/bugbuster/xing_contao_bundle/src')
+```
 
 Symbolischen Link anlegen für das öffentliche Verzeichnis:
 
