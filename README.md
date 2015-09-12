@@ -7,7 +7,7 @@ This Contao 4 extension is still in development.
 Download ZIP: https://github.com/BugBuster1701/xing_contao_bundle/archive/develop.zip,
 auspacken und das Verzeichnis `xing_contao_bundle-develop` umbenennen nach `xing_contao_bundle`.
 
-In das Contao Installationsverzeichnis wechseln, ein Verzeichnis anlegen:
+In das Contao 4 Installationsverzeichnis wechseln, im Verzeichnis `vendor` ein Verzeichnis `bugbuster` anlegen:
 
 ```bash
 mkdir vendor/bugbuster
@@ -31,6 +31,6 @@ ln -s ../../vendor/bugbuster/xing_contao_bundle/src/Resources/public/ contaoxing
 cd ../..
 ```
 
-Auruf http://yourdomain/install.php , Datenbank Update durchführen
+Aufruf http://yourdomain/install.php , Datenbank Update durchführen
 
 Fertig.
