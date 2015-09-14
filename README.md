@@ -38,6 +38,13 @@ ln -s ../../vendor/bugbuster/contao-xing-bundle/src/Resources/public/ contaoxing
 cd ../..
 ```
 
+Eventuell ist es noch nötig, den Cache zu löschen:
+
+```bash
+rm -rm app/cache/dev/*
+rm -rf app/cache/prod/*
+```
+
 Aufruf http://yourdomain/install.php , Datenbank Update durchführen
 
 Fertig.
