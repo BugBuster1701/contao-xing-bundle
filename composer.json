@@ -38,7 +38,7 @@
 		},
 		"contao":{
 			"transifex": {
-				"project": "contao4-xing",
+				"project": "contao-xing-bundle",
 				"prefix": "master-",
 				"languages_cto": "src/Resources/contao/languages",
 				"languages_tx": ".tx"
