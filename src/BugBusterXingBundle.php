@@ -5,7 +5,7 @@
  * @author     Glen Langer (BugBuster)
  * @package    Xing
  * @license    LGPL-3.0+
- * @see	      https://github.com/BugBuster1701/xing_contao_bundle
+ * @see	       https://github.com/BugBuster1701/contao-xing-bundle
  *
  */
 
@@ -18,6 +18,6 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
  *
  * @author Glen Langer
  */
-class ContaoXingBundle extends Bundle
+class BugBusterXingBundle extends Bundle
 {
 }
