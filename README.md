@@ -24,7 +24,7 @@ Zeile am Ende hinzufügen, ein Komma am Ende der alten letzten Zeile nicht verge
 ```
 
 In `app/AppKernel.php` 
-Zeile am Ende des $bundle Arrays hinzufügen.
+Zeile am Ende des $bundles Arrays hinzufügen.
 
 ```php
 new BugBuster\XingBundle\BugBusterXingBundle(),
