@@ -41,7 +41,7 @@ cd ../..
 Eventuell ist es noch nötig, den Cache zu löschen:
 
 ```bash
-rm -rm app/cache/dev/*
+rm -rf app/cache/dev/*
 rm -rf app/cache/prod/*
 ```
 
