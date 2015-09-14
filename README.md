@@ -23,6 +23,13 @@ Zeile am Ende hinzufügen, ein Komma am Ende der alten letzten Zeile nicht verge
 'BugBuster\\XingBundle\\' => array($vendorDir . '/bugbuster/contao-xing-bundle/src')
 ```
 
+In `app/AppKernel.php` 
+Zeile am Ende des $bundle Arrays hinzufügen.
+
+```php
+new BugBuster\XingBundle\BugBusterXingBundle(),
+```
+
 Symbolischen Link anlegen für das öffentliche Verzeichnis:
 
 ```bash
