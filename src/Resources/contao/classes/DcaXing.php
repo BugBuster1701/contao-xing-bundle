@@ -10,7 +10,7 @@
  * @package    Xing
  * @license    LGPL
  * @filesource
- * @see	       https://github.com/BugBuster1701/contao_xing
+ * @see	       https://github.com/BugBuster1701/contao-xing-bundle
  */
 
 /**
