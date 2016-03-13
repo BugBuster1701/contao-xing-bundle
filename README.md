@@ -2,48 +2,41 @@
 
 This Contao 4 extension is still in development.
 
-## Installation (vorläufig)
 
-Download ZIP: https://github.com/BugBuster1701/contao-xing-bundle/archive/develop.zip,
-auspacken und das Verzeichnis `contao-xing-bundle-develop` umbenennen nach `contao-xing-bundle`.
+## Installation (en)
 
-In das Contao 4 Installationsverzeichnis wechseln, im Verzeichnis `vendor` ein Verzeichnis `bugbuster` anlegen:
+Installation in a Composer-based Contao 4.1 Installation
 
-```bash
-mkdir vendor/bugbuster
-```
+`composer require "bugbuster/contao-xing-bundle:1.0.*"`
 
-Kopiere das umbenannte Verzeichnis `contao-xing-bundle` nach `vendor/bugbuster`.
-Damit muss existieren: `vendor/bugbuster/contao-xing-bundle/`
+Add in `app/AppKernel.php` following line at the end of the `$bundles` array.
 
-In `vendor/composer/autoload_psr4.php`
-Zeile am Ende hinzufügen, ein Komma am Ende der alten letzten Zeile nicht vergessen.
+`new BugBuster\XingBundle\BugBusterXingBundle(),`
 
-```php
-'BugBuster\\XingBundle\\' => array($vendorDir . '/bugbuster/contao-xing-bundle/src')
-```
+Clear the cache and rebuild:
 
-In `app/AppKernel.php` 
-Zeile am Ende des $bundles Arrays hinzufügen.
+`app/console cache:clear --env=prod`
 
-```php
-new BugBuster\XingBundle\BugBusterXingBundle(),
-```
+`app/console cache:warmup -e prod`
 
-Symbolischen Link anlegen für das öffentliche Verzeichnis:
+Call http://yourdomain/install.php , update the database.
 
-```bash
-cd web/bundles/
-ln -s ../../vendor/bugbuster/contao-xing-bundle/src/Resources/public/ contaoxing
-cd ../..
-```
 
-Eventuell ist es noch nötig, den Cache zu löschen:
+## Installation (de)
 
-```bash
-rm -rf app/cache/dev/*
-rm -rf app/cache/prod/*
-```
+Installation in einer Composer-basierten Contao 4.1 Installation
+
+`composer require "bugbuster/contao-xing-bundle:1.0.*"`
+
+In `app/AppKernel.php` folgende Zeile am Ende des `$bundles` Arrays hinzufügen.
+
+`new BugBuster\XingBundle\BugBusterXingBundle(),`
+
+Nun den Cache löschen und neu aufbauen:
+
+`app/console cache:clear --env=prod`
+
+`app/console cache:warmup -e prod`
 
 Aufruf http://yourdomain/install.php , Datenbank Update durchführen
 
