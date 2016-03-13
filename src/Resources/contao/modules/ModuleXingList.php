@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Contao Open Source CMS, Copyright (C) 2005-2015 Leo Feyer
+ * Contao Open Source CMS, Copyright (C) 2005-2016 Leo Feyer
  *
- * @copyright  Glen Langer 2008..2015 <http://contao.ninja>
+ * @copyright  Glen Langer 2008..2016 <http://contao.ninja>
  * @author     Glen Langer (BugBuster)
  * @package    Xing
  * @license    LGPL
@@ -19,7 +19,7 @@ namespace BugBuster\Xing;
 /**
  * Class ModuleXingList
  *
- * @copyright  Glen Langer 2008..2015
+ * @copyright  Glen Langer 2008..2016
  * @author     Glen Langer (BugBuster)
  * @package    Xing
  */
@@ -47,7 +47,7 @@ class ModuleXingList extends \Module
 	/**
 	 * Current version of the class.
 	 */
-	const XINGLIST_VERSION = '3.0.0';
+	const XINGLIST_VERSION = '1.0.0';
 
 
 	/**

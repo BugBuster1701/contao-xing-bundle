@@ -1,9 +1,7 @@
 <?php
 
 /**
- * Contao Open Source CMS
- * 
- * Copyright (C) 2005-2015 Leo Feyer
+ * Contao Open Source CMS, Copyright (C) 2005-2016 Leo Feyer
  * 
  * @package Xing
  */

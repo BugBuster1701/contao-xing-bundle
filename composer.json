@@ -2,7 +2,7 @@
 	"name":"bugbuster/contao-xing-bundle",
 	"description":"Contao 4 Xing Bundle",
 	"keywords":["contao","xing","bundle"],
-	"type":"symfony-bundle",
+	"type":"contao-module",
 	"homepage":"http://contao.ninja",
 	"license":"LGPL-3.0+",
 	"authors":[
@@ -21,8 +21,8 @@
 	},
 	"require":{
 		"php": ">=5.4.0",
-		"symfony/framework-bundle": "~2.7",
-		"contao/core-bundle": "~4.0"
+		"contao/core-bundle": "~4.1",
+		"contao-community-alliance/composer-plugin": "~3.0"
 	},
 	"conflict": {
 		"contao/core": "*"
