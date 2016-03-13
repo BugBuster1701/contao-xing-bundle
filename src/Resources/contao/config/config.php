@@ -18,7 +18,7 @@
 $GLOBALS['BE_MOD']['content']['xing'] = array
 (
 	'tables' => array('tl_xing_category', 'tl_xing'),
-	'icon'   => 'bundles/contaoxing/icon.gif'
+	'icon'   => 'bundles/bugbusterxing/icon.gif'
 );
 
 

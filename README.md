@@ -13,11 +13,15 @@ Add in `app/AppKernel.php` following line at the end of the `$bundles` array.
 
 `new BugBuster\XingBundle\BugBusterXingBundle(),`
 
-Clear the cache and rebuild:
+Clears the cache and warms up an empty cache:
 
 `app/console cache:clear --env=prod`
 
 `app/console cache:warmup -e prod`
+
+Installs bundles web assets under a public web directory
+
+`app/console assets:install`
 
 Call http://yourdomain/install.php , update the database.
 
@@ -37,6 +41,10 @@ Nun den Cache löschen und neu aufbauen:
 `app/console cache:clear --env=prod`
 
 `app/console cache:warmup -e prod`
+
+Installieren des Bundle Web-Assets ins öffentliche `web/` Verzeichnis:
+
+`app/console assets:install`
 
 Aufruf http://yourdomain/install.php , Datenbank Update durchführen
 
