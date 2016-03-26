@@ -1,6 +1,13 @@
 # Contao 4 XING Bundle
 
-This Contao 4 extension is still in development.
+
+[![Latest Stable Version](https://poser.pugx.org/bugbuster/contao-xing-bundle/v/stable.svg)](https://packagist.org/packages/bugbuster/contao-xing-bundle) [![Total Downloads](https://poser.pugx.org/bugbuster/contao-xing-bundle/downloads.svg)](https://packagist.org/packages/bugbuster/contao-xing-bundle) [![Latest Unstable Version](https://poser.pugx.org/bugbuster/contao-xing-bundle/v/unstable.svg)](https://packagist.org/packages/bugbuster/contao-xing-bundle) [![License](https://poser.pugx.org/bugbuster/contao-xing-bundle/license.svg)](https://packagist.org/packages/bugbuster/contao-xing-bundle)
+
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/d95002f6-9ba5-4b5f-8c2a-5d2f3ffbfe84/small.png)](https://insight.sensiolabs.com/projects/d95002f6-9ba5-4b5f-8c2a-5d2f3ffbfe84)
+
+
+## About
+Adding XING banner as a module, with categories.
 
 
 ## Installation (en)
