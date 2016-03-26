@@ -1,14 +1,14 @@
 <?php 
 
 /**
- * Contao Open Source CMS, Copyright (C) 2005-2015 Leo Feyer
+ * Contao Open Source CMS, Copyright (C) 2005-2016 Leo Feyer
  * 
- * @copyright  Glen Langer 2008..2015 <http://contao.ninja>
+ * @copyright  Glen Langer 2008..2016 <http://contao.ninja>
  * @author     Glen Langer (BugBuster)
  * @package    Xing
  * @license    LGPL
  * @filesource
- * @see	       https://github.com/BugBuster1701/contao_xing
+ * @see	       https://github.com/BugBuster1701/contao-xing-bundle
  */
 
 /**
@@ -33,9 +33,9 @@ class XingImage
 	{
 	    $arrXingImageDefinitions= array();
 	    
-	    if (file_exists(TL_ROOT . "/system/modules/xing/config/xing_image_definitions.php"))
+	    if (file_exists(TL_ROOT . "/vendor/bugbuster/contao-xing-bundle/src/Resources/contao/config/xing_image_definitions.php"))
 	    {
-	        include(TL_ROOT . "/system/modules/xing/config/xing_image_definitions.php");
+	        include(TL_ROOT . "/vendor/bugbuster/contao-xing-bundle/src/Resources/contao/config/xing_image_definitions.php");
 	    }
 	    
 	    if (isset($arrXingImageDefinitions[$xinglayout])) 

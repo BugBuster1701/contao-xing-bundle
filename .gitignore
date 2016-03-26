@@ -1,0 +1,6 @@
+.git/
+.settings/
+.buildpath
+.project
+# Transifex
+/.tx/

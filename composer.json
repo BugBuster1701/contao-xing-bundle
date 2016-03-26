@@ -1,5 +1,5 @@
 {
-	"name":"bugbuster/xing_contao_bundle",
+	"name":"bugbuster/contao-xing-bundle",
 	"description":"Contao 4 Xing Bundle",
 	"keywords":["contao","xing","bundle"],
 	"type":"symfony-bundle",
@@ -13,29 +13,32 @@
 		}
 	],
 	"support":{
-		"issues":"https://github.com/BugBuster1701/xing_contao_bundle/issues",
+		"issues":"https://github.com/BugBuster1701/contao-xing-bundle/issues",
 		"irc":"irc://irc.freenode.org/contao.dev",
-		"source":"https://github.com/BugBuster1701/xing_contao_bundle",
+		"source":"https://github.com/BugBuster1701/contao-xing-bundle",
 		"wiki":"http://de.contaowiki.org/Xing",
 		"forum":"https://community.contao.org/de/forumdisplay.php?119"
 	},
 	"require":{
 		"php": ">=5.4.0",
-		"symfony/framework-bundle": "~2.7",
-		"contao/core-bundle": "~4.0"
+		"contao/core-bundle": "~4.1",
+		"contao-community-alliance/composer-plugin": "~3.0"
 	},
 	"conflict": {
-      "contao/core": "*"
-  },
+		"contao/core": "*"
+	},
 	"autoload": {
-      "psr-4": {
-          "BugBuster\\XingBundle\\": "src/"
-      }
-  },
+		"psr-4": {
+			"BugBuster\\XingBundle\\": "src/"
+		}
+  	},
 	"extra":{
+		"branch-alias": {
+			"dev-develop": "1.0.x-dev"
+		},
 		"contao":{
 			"transifex": {
-				"project": "contao4-xing",
+				"project": "contao-xing-bundle",
 				"prefix": "master-",
 				"languages_cto": "src/Resources/contao/languages",
 				"languages_tx": ".tx"

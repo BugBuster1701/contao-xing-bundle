@@ -1,9 +1,7 @@
 <?php
 
 /**
- * Contao Open Source CMS
- * 
- * Copyright (C) 2005-2015 Leo Feyer
+ * Contao Open Source CMS, Copyright (C) 2005-2016 Leo Feyer
  * 
  * @package Xing
  */
@@ -24,12 +22,12 @@ ClassLoader::addNamespaces(array
 ClassLoader::addClasses(array
 (
 	// Modules
-	'BugBuster\Xing\ModuleXingList'  => 'system/modules/xing/modules/ModuleXingList.php',
+	'BugBuster\Xing\ModuleXingList'  => 'vendor/bugbuster/contao-xing-bundle/src/Resources/contao/modules/ModuleXingList.php',
 
 	// Classes
-	'BugBuster\Xing\XingImage'     => 'system/modules/xing/classes/XingImage.php',
-	'BugBuster\Xing\DcaXing'       => 'system/modules/xing/classes/DcaXing.php',
-	'BugBuster\Xing\DcaModuleXing' => 'system/modules/xing/classes/DcaModuleXing.php',
+	'BugBuster\Xing\XingImage'     => 'vendor/bugbuster/contao-xing-bundle/src/Resources/contao/classes/XingImage.php',
+	'BugBuster\Xing\DcaXing'       => 'vendor/bugbuster/contao-xing-bundle/src/Resources/contao/classes/DcaXing.php',
+	'BugBuster\Xing\DcaModuleXing' => 'vendor/bugbuster/contao-xing-bundle/src/Resources/contao/classes/DcaModuleXing.php',
 ));
 
 
@@ -38,9 +36,9 @@ ClassLoader::addClasses(array
  */
 TemplateLoader::addFiles(array
 (
-	'mod_xing_list'         => 'system/modules/xing/templates',
-	'mod_xing_list_company' => 'system/modules/xing/templates',
-	'mod_xing_list_team'    => 'system/modules/xing/templates',
-	'mod_xing_empty'        => 'system/modules/xing/templates',
-	'mod_xing_list_profile' => 'system/modules/xing/templates',
+	'mod_xing_list'         => 'vendor/bugbuster/contao-xing-bundle/src/Resources/contao/templates',
+	'mod_xing_list_company' => 'vendor/bugbuster/contao-xing-bundle/src/Resources/contao/templates',
+	'mod_xing_list_team'    => 'vendor/bugbuster/contao-xing-bundle/src/Resources/contao/templates',
+	'mod_xing_empty'        => 'vendor/bugbuster/contao-xing-bundle/src/Resources/contao/templates',
+	'mod_xing_list_profile' => 'vendor/bugbuster/contao-xing-bundle/src/Resources/contao/templates',
 ));
