@@ -20,8 +20,8 @@
 		"forum":"https://community.contao.org/de/forumdisplay.php?119"
 	},
 	"require":{
-		"php": ">=5.4.0",
-		"contao/core-bundle": "~4.1",
+		"php": ">=5.5.0",
+		"contao/core-bundle": "~4.2",
 		"contao-community-alliance/composer-plugin": "~3.0"
 	},
 	"conflict": {

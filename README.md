@@ -12,7 +12,7 @@ Adding XING banner as a module, with categories.
 
 ## Installation (en)
 
-Installation in a Composer-based Contao 4.1 Installation
+Installation in a Composer-based Contao 4.2 Installation
 
 `composer require "bugbuster/contao-xing-bundle:1.0.*"`
 
@@ -35,7 +35,7 @@ Call http://yourdomain/install.php , update the database.
 
 ## Installation (de)
 
-Installation in einer Composer-basierten Contao 4.1 Installation
+Installation in einer Composer-basierten Contao 4.2 Installation
 
 `composer require "bugbuster/contao-xing-bundle:1.0.*"`
 
