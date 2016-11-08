@@ -8,9 +8,8 @@
  *
  * @license http://www.gnu.org/licenses/lgpl-3.0.html LGPL
  *
- * last-updated: 2015-09-14T23:16:16+02:00
+ * last-updated: 2015-09-15T00:08:22+02:00
  */
 
-
-$GLOBALS['TL_LANG']['XingList']['warning'] = 'ERROR: Ab Version 3.0.0 benötigt das Xing Modul mindestens Contao 3.0';
+$GLOBALS['TL_LANG']['XingList']['warning'] = 'ERROR: Contao Xing Bundle benötigt mindestens Contao 4.0';
 
