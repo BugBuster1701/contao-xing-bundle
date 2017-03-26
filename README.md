@@ -10,9 +10,31 @@
 Adding XING banner as a module, with categories.
 
 
-## Installation (en)
+## Contao Managed-Edition
 
-Installation in a Composer-based Contao 4.2 Installation
+### Installation for Contao Managed-Edition (en)
+
+Installation in a Composer-based Contao 4.3 Managed-Editon Installation
+
+`composer require "bugbuster/contao-xing-bundle:1.1.*"`
+
+Call http://yourdomain/install.php , update the database.
+
+
+### Installation für Contao Managed-Edition (de)
+
+Installation in einer Composer-basierten Contao 4.3 Manged-Edition Installation
+
+`composer require "bugbuster/contao-xing-bundle:1.1.*"`
+
+Aufruf http://yourdomain/install.php , Datenbank Update durchführen
+
+
+## Contao Standard-Edition
+
+### Installation for Contao Standard-Edition (en)
+
+Installation in a Composer-based Contao 4.2 Standard-Edition Installation
 
 `composer require "bugbuster/contao-xing-bundle:1.0.*"`
 
@@ -33,9 +55,9 @@ Installs bundles web assets under a public web directory
 Call http://yourdomain/install.php , update the database.
 
 
-## Installation (de)
+### Installation für Contao Standard-Edition (de)
 
-Installation in einer Composer-basierten Contao 4.2 Installation
+Installation in einer Composer-basierten Contao 4.2 Standard-Edition Installation
 
 `composer require "bugbuster/contao-xing-bundle:1.0.*"`
 
