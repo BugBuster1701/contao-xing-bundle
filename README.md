@@ -14,7 +14,7 @@ Adding XING banner as a module, with categories.
 
 ### Installation for Contao Managed-Edition (en)
 
-Installation in a Composer-based Contao 4.3 Managed-Editon Installation
+Installation in a Composer-based Contao 4.3 Managed-Edition Installation
 
 `composer require "bugbuster/contao-xing-bundle:1.1.*"`
 
