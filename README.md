@@ -10,71 +10,25 @@
 Adding XING banner as a module, with categories.
 
 
-## Contao Managed-Edition
+## Installation
 
-### Installation for Contao Managed-Edition (en)
+Installation Guide (EN): [INSTALLATION_EN.md](INSTALLATION_EN.md)
 
-Installation in a Composer-based Contao 4.3 Managed-Edition Installation
-
-`composer require "bugbuster/contao-xing-bundle:1.1.*"`
-
-Call http://yourdomain/install.php , update the database.
+Installationsanleitung (DE): [INSTALLATION_DE.md](INSTALLATION_DE.md)
 
 
-### Installation für Contao Managed-Edition (de)
+## User guide
 
-Installation in einer Composer-basierten Contao 4.3 Manged-Edition Installation
-
-`composer require "bugbuster/contao-xing-bundle:1.1.*"`
-
-Aufruf http://yourdomain/install.php , Datenbank Update durchführen
+* English: http://en.contaowiki.org/Xing
+* German: http://de.contaowiki.org/Xing
 
 
-## Contao Standard-Edition
+## For Translators
 
-### Installation for Contao Standard-Edition (en)
+Translations are managed using Transifex. To create a new translation or to help to maintain an existing one, please register at transifex.com.
 
-Installation in a Composer-based Contao 4.2 Standard-Edition Installation
+Project Link: [https://www.transifex.com/projects/p/ontao-xing-bundle/](https://www.transifex.com/projects/p/ontao-xing-bundle/)
 
-`composer require "bugbuster/contao-xing-bundle:1.0.*"`
-
-Add in `app/AppKernel.php` following line at the end of the `$bundles` array.
-
-`new BugBuster\XingBundle\BugBusterXingBundle(),`
-
-Clears the cache and warms up an empty cache:
-
-`app/console cache:clear --env=prod`
-
-`app/console cache:warmup -e prod`
-
-Installs bundles web assets under a public web directory
-
-`app/console assets:install`
-
-Call http://yourdomain/install.php , update the database.
+Howto: [http://docs.transifex.com/faq/#translating](http://docs.transifex.com/faq/#translating)
 
 
-### Installation für Contao Standard-Edition (de)
-
-Installation in einer Composer-basierten Contao 4.2 Standard-Edition Installation
-
-`composer require "bugbuster/contao-xing-bundle:1.0.*"`
-
-In `app/AppKernel.php` folgende Zeile am Ende des `$bundles` Arrays hinzufügen.
-
-`new BugBuster\XingBundle\BugBusterXingBundle(),`
-
-Nun den Cache löschen und neu aufbauen:
-
-`app/console cache:clear --env=prod`
-
-`app/console cache:warmup -e prod`
-
-Installieren des Bundle Web-Assets ins öffentliche `web/` Verzeichnis:
-
-`app/console assets:install`
-
-Aufruf http://yourdomain/install.php , Datenbank Update durchführen
-
-Fertig.
