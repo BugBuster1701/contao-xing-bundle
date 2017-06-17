@@ -17,6 +17,7 @@
  * Run in a custom namespace, so the class can be replaced
  */
 namespace BugBuster\Xing;
+use BugBuster\Xing\XingImage;
 
 /**
  * DCA Helper Class DcaXing
@@ -43,9 +44,10 @@ class DcaXing extends \Backend
 
 		$key = $arrRow['published'] ? 'published' : 'unpublished';
 		$date = date($GLOBALS['TL_CONFIG']['datimFormat'], $arrRow['tstamp']);
-		//$XingImage = new XingImage(); // classes/XingImage.php
-		$this->import('\Xing\XingImage','XingImage');
-		$xing_images = $this->XingImage->getXingImageLink($arrRow['xinglayout']);
+		// alt $this->import('\Xing\XingImage','XingImage');
+		// alt $xing_images = $this->XingImage->getXingImageLink($arrRow['xinglayout']);
+		$XingImage = new XingImage(); // classes/XingImage.php
+		$xing_images = $XingImage->getXingImageLink($arrRow['xinglayout']);
 
 		return '
 <div class="cte_type ' . $key . '" ' . $style . '><strong>' . $arrRow['xingprofil'] . '</strong> - ' . $date . '</div>' 
