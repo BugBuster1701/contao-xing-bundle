@@ -27,7 +27,8 @@
         "contao/manager-plugin": "^2.0"
 	},
 	"conflict": {
-		"contao/manager-plugin": "<2.0 || >=3.0"
+		"contao/manager-plugin": "<2.0 || >=3.0",
+		"symfony/symfony": "3.2.7"
 	},
 	"autoload": {
 		"psr-4": {

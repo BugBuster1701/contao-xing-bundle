@@ -107,7 +107,7 @@ $GLOBALS['TL_DCA']['tl_xing'] = array
 	// Palettes
 	'palettes' => array
 	(
-		'default'                     => 'xingprofil,xinglayout,xingtarget;published'
+		'default'                     => 'xingprofil,xinglayout;xingtarget;published'
 	),
 
 	// Fields
