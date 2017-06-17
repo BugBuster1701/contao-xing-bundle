@@ -29,6 +29,6 @@ array_insert($GLOBALS['FE_MOD'], 4, array
 (
 	'xing' => array
 	(
-		'xinglist'   => 'Xing\ModuleXingList'
+		'xinglist'   => 'BugBuster\Xing\ModuleXingList'
 	)
 ));

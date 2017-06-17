@@ -15,6 +15,7 @@
  * Run in a custom namespace, so the class can be replaced
  */
 namespace BugBuster\Xing;
+use BugBuster\Xing\XingImage;
 
 /**
  * Class ModuleXingList
