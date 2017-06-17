@@ -16,6 +16,8 @@
  */
 namespace BugBuster\Xing;
 use BugBuster\Xing\XingImage;
+use Psr\Log\LogLevel;
+use Contao\CoreBundle\Monolog\ContaoContext;
 
 /**
  * Class ModuleXingList
@@ -48,7 +50,7 @@ class ModuleXingList extends \Module
 	/**
 	 * Current version of the class.
 	 */
-	const XINGLIST_VERSION = '1.0.0';
+	const XINGLIST_VERSION = '1.1.0';
 
 
 	/**
@@ -96,7 +98,10 @@ class ModuleXingList extends \Module
 			//mod_xing_empty
 			$this->strTemplate = 'mod_xing_empty';
             $this->Template = new \FrontendTemplate($this->strTemplate);
-            $this->log('mod_xing_empty, numRows < 1', 'XingList', TL_ERROR);
+
+            $strText = 'mod_xing_empty, numRows < 1';
+            $logger = static::getContainer()->get('monolog.logger.contao');
+            $logger->log(LogLevel::ERROR, $strText, array('contao' => new ContaoContext('XingList', TL_ERROR)));
 			return;
 		}
 

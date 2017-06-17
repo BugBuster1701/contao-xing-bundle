@@ -18,6 +18,8 @@
  */
 namespace BugBuster\Xing;
 use BugBuster\Xing\XingImage;
+use Psr\Log\LogLevel;
+use Contao\CoreBundle\Monolog\ContaoContext;
 
 /**
  * DCA Helper Class DcaXing
@@ -44,8 +46,7 @@ class DcaXing extends \Backend
 
 		$key = $arrRow['published'] ? 'published' : 'unpublished';
 		$date = date($GLOBALS['TL_CONFIG']['datimFormat'], $arrRow['tstamp']);
-		// alt $this->import('\Xing\XingImage','XingImage');
-		// alt $xing_images = $this->XingImage->getXingImageLink($arrRow['xinglayout']);
+
 		$XingImage = new XingImage(); // classes/XingImage.php
 		$xing_images = $XingImage->getXingImageLink($arrRow['xinglayout']);
 
@@ -86,7 +87,7 @@ class DcaXing extends \Backend
 			$icon = 'invisible.gif';
 		}		
 
-		return '<a href="'.$this->addToUrl($href.'&amp;id='.\Input::get('id')).'" title="'.specialchars($title).'"'.$attributes.'>'.$this->generateImage($icon, $label).'</a> ';
+		return '<a href="'.$this->addToUrl($href.'&amp;id='.\Input::get('id')).'" title="'.specialchars($title).'"'.$attributes.'>'.\Image::getHtml($icon, $label).'</a> ';
 	}
 	
 	/**
@@ -99,7 +100,11 @@ class DcaXing extends \Backend
 	    // Check permissions to publish	    
         if (!$this->User->isAdmin && !$this->User->hasAccess('tl_xing::published', 'alexf'))
         {
-			$this->log('Not enough permissions to publish/unpublish Xing Profile ID "'.$intId.'"', 'tl_xing toggleVisibility', TL_ERROR);
+			$strText = 'Not enough permissions to publish/unpublish Xing Profile ID "'.$intId.'"';
+			
+			$logger = static::getContainer()->get('monolog.logger.contao');
+			$logger->log(LogLevel::ERROR, $strText, array('contao' => new ContaoContext('tl_xing toggleVisibility', TL_ERROR)));
+			
 			$this->redirect('contao/main.php?act=error');
         }
 		// Update database
