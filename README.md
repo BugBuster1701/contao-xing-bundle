@@ -27,7 +27,7 @@ Installationsanleitung (DE): [INSTALLATION_DE.md](INSTALLATION_DE.md)
 
 Translations are managed using Transifex. To create a new translation or to help to maintain an existing one, please register at transifex.com.
 
-Project Link: [https://www.transifex.com/projects/p/ontao-xing-bundle/](https://www.transifex.com/projects/p/ontao-xing-bundle/)
+Project Link: [https://www.transifex.com/projects/p/contao-xing-bundle/](https://www.transifex.com/projects/p/contao-xing-bundle/)
 
 Howto: [http://docs.transifex.com/faq/#translating](http://docs.transifex.com/faq/#translating)
 
