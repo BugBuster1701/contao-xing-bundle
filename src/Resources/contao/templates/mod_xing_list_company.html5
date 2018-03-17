@@ -6,7 +6,7 @@
 <?php endif; ?>
 <?php foreach ($this->xing as $xing): ?>
 	<div class="xing_image">
-		<a href="https://www.xing.com/companies/<?php echo $xing['xingprofil']; ?>" <?php echo $xing['xingtarget']; ?>><?php echo $xing['xinglayout']; ?></a>
+		<a href="//www.xing.com/companies/<?php echo $xing['xingprofil']; ?>" <?php echo $xing['xingtarget']; ?>><?php echo $xing['xinglayout']; ?></a>
 	</div>
 <?php endforeach; ?>
 </section>

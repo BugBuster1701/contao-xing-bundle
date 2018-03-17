@@ -47,11 +47,11 @@ class XingImage
 
     	if ($xinglayout < 999) 
     	{
-    	    $xing_images = '<img src="http://www.xing.com/img/buttons/'.$this->image_file.'" '.$this->image_size.' alt="XING" title="'.$this->image_title.'">';
+    	    $xing_images = '<img src="//www.xing.com/img/buttons/'.$this->image_file.'" '.$this->image_size.' alt="XING" title="'.$this->image_title.'">';
     	}
     	else
     	{
-    	    $xing_images = '<img src="http://www.xing.com/img/xing/xe/corporate_pages/'.$this->image_file.'" '.$this->image_size.' alt="XING" title="'.$this->image_title.'">';
+    	    $xing_images = '<img src="//www.xing.com/img/xing/xe/corporate_pages/'.$this->image_file.'" '.$this->image_size.' alt="XING" title="'.$this->image_title.'">';
     	}
         return $xing_images;
 	} // getXingImageLink
