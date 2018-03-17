@@ -4,7 +4,7 @@
 	"keywords":["contao","xing","bundle"],
 	"type":"contao-bundle",
 	"homepage":"http://contao.ninja",
-	"license":"LGPL-3.0+",
+	"license":"LGPL-3.0-or-later",
 	"authors":[
 		{
 			"name":"Glen Langer",
@@ -20,7 +20,7 @@
 		"forum":"https://community.contao.org/de/forumdisplay.php?119"
 	},
 	"require":{
-		"php": ">=5.6.0",
+		"php": "^5.6|^7.0",
 		"contao/core-bundle": "~4.3"
 	},
 	"require-dev": {
