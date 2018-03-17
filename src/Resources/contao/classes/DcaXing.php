@@ -1,11 +1,11 @@
 <?php 
 
 /**
- * Contao Open Source CMS, Copyright (C) 2005-2016 Leo Feyer
+ * Contao Open Source CMS, Copyright (C) 2005-2018 Leo Feyer
  * 
  * Contao Module "Xing" - DCA Helper Class DcaXing
  * 
- * @copyright  Glen Langer 2008..2016 <http://contao.ninja>
+ * @copyright  Glen Langer 2008..2018 <http://contao.ninja>
  * @author     Glen Langer (BugBuster)
  * @package    Xing
  * @license    LGPL
@@ -24,7 +24,7 @@ use Contao\CoreBundle\Monolog\ContaoContext;
 /**
  * DCA Helper Class DcaXing
  *
- * @copyright  Glen Langer 2008..2016 <http://contao.ninja>
+ * @copyright  Glen Langer 2008..2018 <http://contao.ninja>
  * @author     Glen Langer (BugBuster)
  * @package    Xing
  *
