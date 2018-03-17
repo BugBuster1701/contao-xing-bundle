@@ -71,7 +71,7 @@ class ModuleXingList extends \Module
 			return $objTemplate->parse();
 		}
 
-		$this->xing_category = deserialize($this->xing_categories, true);
+		$this->xing_category = \StringUtil::deserialize($this->xing_categories, true);
 
 		// Return if there are no categories
 		if (!is_array($this->xing_category) || !is_numeric($this->xing_category[0]))
