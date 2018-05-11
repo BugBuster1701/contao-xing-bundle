@@ -57,7 +57,7 @@ $arrXingImageDefinitions['9'] = array(
     'image_size'  => 'width="80" height="15"',
     'image_title' => 'mein XING Profil',
 );
-$arrXingImageDefinitions['16'] = array(
+$arrXingImageDefinitions['10'] = array(
     'image_file'  => '16_de_btn.gif',
     'image_size'  => 'width="118" height="23"',
     'image_title' => 'mein XING Profil',
@@ -293,6 +293,75 @@ $arrXingImageDefinitions['77'] = array(
     'image_file'  => '100_pt_btn.gif',
     'image_size'  => 'width="118" height="23"',
     'image_title' => 'Meu XING',
+);
+
+// ES
+$arrXingImageDefinitions['80'] = array(
+    'image_file'  => '17_es_btn.gif',
+    'image_size'  => 'width="85" height="23"',
+    'image_title' => 'Mi perfil en XING',
+);
+$arrXingImageDefinitions['81'] = array(
+    'image_file'  => '18_es_btn.gif',
+    'image_size'  => 'width="118" height="23"',
+    'image_title' => 'Mi perfil en XING',
+);
+$arrXingImageDefinitions['82'] = array(
+    'image_file'  => '19_es_btn.gif',
+    'image_size'  => 'width="139" height="23"',
+    'image_title' => 'Mi perfil en XING',
+);
+$arrXingImageDefinitions['83'] = array(
+    'image_file'  => '20_es_btn.gif',
+    'image_size'  => 'width="118" height="23"',
+    'image_title' => 'Mi perfil en XING',
+);
+$arrXingImageDefinitions['84'] = array(
+    'image_file'  => '21_es_btn.gif',
+    'image_size'  => 'width="80" height="15"',
+    'image_title' => 'Mi perfil en XING',
+);
+$arrXingImageDefinitions['85'] = array(
+    'image_file'  => '22_es_btn.gif',
+    'image_size'  => 'width="118" height="23"',
+    'image_title' => 'Mi perfil en XING',
+);
+
+// IT
+$arrXingImageDefinitions['90'] = array(
+    'image_file'  => '55_it_btn.gif',
+    'image_size'  => 'width="118" height="23"',
+    'image_title' => 'Io su XING',
+);
+$arrXingImageDefinitions['91'] = array(
+    'image_file'  => '56_it_btn.gif',
+    'image_size'  => 'width="118" height="23"',
+    'image_title' => 'Io su XING',
+);
+$arrXingImageDefinitions['92'] = array(
+    'image_file'  => '57_it_btn.gif',
+    'image_size'  => 'width="118" height="23"',
+    'image_title' => 'Io su XING',
+);
+$arrXingImageDefinitions['93'] = array(
+    'image_file'  => '58_it_btn.gif',
+    'image_size'  => 'width="139" height="23"',
+    'image_title' => 'Io su XING',
+);
+$arrXingImageDefinitions['94'] = array(
+    'image_file'  => '59_it_btn.gif',
+    'image_size'  => 'width="118" height="23"',
+    'image_title' => 'Io su XING',
+);
+$arrXingImageDefinitions['95'] = array(
+    'image_file'  => '60_it_btn.gif',
+    'image_size'  => 'width="81" height="14"',
+    'image_title' => 'Io su XING',
+);
+$arrXingImageDefinitions['96'] = array(
+    'image_file'  => '61_it_btn.gif',
+    'image_size'  => 'width="139" height="23"',
+    'image_title' => 'Io su XING',
 );
 
 // Company Button

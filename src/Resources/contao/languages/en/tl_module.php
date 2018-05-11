@@ -17,3 +17,7 @@ $GLOBALS['TL_LANG']['tl_module']['xing_categories']['1'] = 'Please select the XI
 $GLOBALS['TL_LANG']['tl_module']['xing_template']['0']   = 'XING Template';
 $GLOBALS['TL_LANG']['tl_module']['xing_template']['1']   = 'Please choose the XING-Template. XING-Template files start with <em>mod_xing_list</em>.';
 
+$GLOBALS['TL_LANG']['tl_module']['xing_source']['0'] = 'Button source';
+$GLOBALS['TL_LANG']['tl_module']['xing_source']['1'] = 'Here you can select from where to load the XING buttons.';
+$GLOBALS['TL_LANG']['tl_module']['xing_local']       = 'Local file';
+$GLOBALS['TL_LANG']['tl_module']['xing_server']      = 'www.xing.com';
