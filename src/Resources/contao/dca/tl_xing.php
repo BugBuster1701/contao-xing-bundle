@@ -1,9 +1,9 @@
 <?php 
 
 /**
- * Contao Open Source CMS, Copyright (C) 2005-2016 Leo Feyer
+ * Contao Open Source CMS, Copyright (C) 2005-2018 Leo Feyer
  * 
- * @copyright  Glen Langer 2008..2016 <http://contao.ninja>
+ * @copyright  Glen Langer 2008..2018 <http://contao.ninja>
  * @author     Glen Langer (BugBuster)
  * @package    Xing
  * @license    LGPL
@@ -45,7 +45,7 @@ $GLOBALS['TL_DCA']['tl_xing'] = array
 			'mode'                    => 4,
 			'filter'                  => true,
 			'fields'                  => array('sorting'),
-			'panelLayout'             => 'search,filter,limit',
+			'panelLayout'             => 'filter;search,limit',
 			//'headerFields'            => array('title', 'headline', 'tstamp'),
 			'headerFields'            => array('title', 'tstamp'),
 			'child_record_callback'   => array('BugBuster\Xing\DcaXing', 'listProfiles')

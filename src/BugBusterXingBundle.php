@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @copyright  Glen Langer 2008..2017 <http://contao.ninja>
+ * @copyright  Glen Langer 2008..2018 <http://contao.ninja>
  * @author     Glen Langer (BugBuster)
  * @package    Xing
  * @license    LGPL-3.0+

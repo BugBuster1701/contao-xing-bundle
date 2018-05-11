@@ -1,9 +1,9 @@
 <?php 
 
 /**
- * Contao Open Source CMS, Copyright (C) 2005-2016 Leo Feyer
+ * Contao Open Source CMS, Copyright (C) 2005-2018 Leo Feyer
  * 
- * @copyright  Glen Langer 2008..2016 <http://contao.ninja>
+ * @copyright  Glen Langer 2008..2018 <http://contao.ninja>
  * @author     Glen Langer (BugBuster)
  * @package    Xing
  * @license    LGPL
@@ -47,11 +47,11 @@ class XingImage
 
     	if ($xinglayout < 999) 
     	{
-    	    $xing_images = '<img src="http://www.xing.com/img/buttons/'.$this->image_file.'" '.$this->image_size.' alt="XING" title="'.$this->image_title.'">';
+    	    $xing_images = '<img src="//www.xing.com/img/buttons/'.$this->image_file.'" '.$this->image_size.' alt="XING" title="'.$this->image_title.'">';
     	}
     	else
     	{
-    	    $xing_images = '<img src="http://www.xing.com/img/xing/xe/corporate_pages/'.$this->image_file.'" '.$this->image_size.' alt="XING" title="'.$this->image_title.'">';
+    	    $xing_images = '<img src="//www.xing.com/img/xing/xe/corporate_pages/'.$this->image_file.'" '.$this->image_size.' alt="XING" title="'.$this->image_title.'">';
     	}
         return $xing_images;
 	} // getXingImageLink

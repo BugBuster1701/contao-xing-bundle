@@ -7,7 +7,7 @@
 
 <?php foreach ($this->xing as $xing): ?>
 <div class="xing_image">
-    <a href="http://www.xing.com/profile/<?php echo $xing['xingprofil']; ?>" <?php echo $xing['xingtarget']; ?>><?php echo $xing['xinglayout']; ?></a>
+    <a href="//www.xing.com/profile/<?php echo $xing['xingprofil']; ?>" <?php echo $xing['xingtarget']; ?>><?php echo $xing['xinglayout']; ?></a>
 </div>
 <div class="xing_profile"><?php echo strtr($xing['xingprofil'],'_',' '); ?></div>
 <?php endforeach; ?>
