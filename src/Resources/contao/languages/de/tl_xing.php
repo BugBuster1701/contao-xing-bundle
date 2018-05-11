@@ -8,9 +8,8 @@
  *
  * @license http://www.gnu.org/licenses/lgpl-3.0.html LGPL
  *
- * last-updated: 2015-09-14T23:16:16+02:00
+ * last-updated: 2016-03-26T19:02:29+01:00
  */
-
 
 $GLOBALS['TL_LANG']['tl_xing']['1']               = 'DE Variante 1 ( 85x23)';
 $GLOBALS['TL_LANG']['tl_xing']['10']              = 'DE Variante 10 (118x23)';
@@ -65,7 +64,20 @@ $GLOBALS['TL_LANG']['tl_xing']['75']              = 'PT Variante 5 (118x23)';
 $GLOBALS['TL_LANG']['tl_xing']['76']              = 'PT Variante 6 ( 80x15) Text';
 $GLOBALS['TL_LANG']['tl_xing']['77']              = 'PT Variante 7 (118x23)';
 $GLOBALS['TL_LANG']['tl_xing']['8']               = 'DE Variante 8 (118x23)';
+$GLOBALS['TL_LANG']['tl_xing']['80']              = 'ES Variante 1 ( 85x23)';
+$GLOBALS['TL_LANG']['tl_xing']['81']              = 'ES Variante 2 (118x23)';
+$GLOBALS['TL_LANG']['tl_xing']['82']              = 'ES Variante 3 (139x23)';
+$GLOBALS['TL_LANG']['tl_xing']['83']              = 'ES Variante 4 (118x23)';
+$GLOBALS['TL_LANG']['tl_xing']['84']              = 'ES Variante 5 ( 80x15) Text';
+$GLOBALS['TL_LANG']['tl_xing']['85']              = 'ES Variante 6 (118x23)';
 $GLOBALS['TL_LANG']['tl_xing']['9']               = 'DE Variante 9 ( 80x15) Text';
+$GLOBALS['TL_LANG']['tl_xing']['90']              = 'IT Variante 1 (118x23)';
+$GLOBALS['TL_LANG']['tl_xing']['91']              = 'IT Variante 2 (118x23)';
+$GLOBALS['TL_LANG']['tl_xing']['92']              = 'IT Variante 3 (118x23)';
+$GLOBALS['TL_LANG']['tl_xing']['93']              = 'IT Variante 4 (139x23)';
+$GLOBALS['TL_LANG']['tl_xing']['94']              = 'IT Variante 5 (118x23)';
+$GLOBALS['TL_LANG']['tl_xing']['95']              = 'IT Variante 6 ( 81x14) Text';
+$GLOBALS['TL_LANG']['tl_xing']['96']              = 'IT Variante 7 (139x23)';
 $GLOBALS['TL_LANG']['tl_xing']['999']             = 'Company Button ( 98x23)';
 $GLOBALS['TL_LANG']['tl_xing']['copy']['0']       = 'Profil duplizieren';
 $GLOBALS['TL_LANG']['tl_xing']['copy']['1']       = 'Profil ID %s duplizieren';
