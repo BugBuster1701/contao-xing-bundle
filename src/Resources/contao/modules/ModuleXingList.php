@@ -110,7 +110,7 @@ class ModuleXingList extends \Module
 
 		while ($objXing->next())
 		{
-		    $this->xing_images = $XingImage->getXingImageLink($objXing->xinglayout);
+		    $this->xing_images = $XingImage->getXingImageLink($objXing->xinglayout, $this->xing_source);
 
     		if (($this->xing_template != $this->strTemplate) && ($this->xing_template == 'mod_xing_list_company'))
     		{

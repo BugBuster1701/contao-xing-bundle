@@ -15,7 +15,7 @@
 /**
  * Add palettes to tl_module
  */
-$GLOBALS['TL_DCA']['tl_module']['palettes']['xinglist']   = 'name,type,headline;xing_categories,xing_template;guests,protected;align,space,cssID';
+$GLOBALS['TL_DCA']['tl_module']['palettes']['xinglist']   = 'name,type,headline;xing_categories,xing_template,xing_source;guests,protected;align,space,cssID';
 
 /**
  * Add fields to tl_module
@@ -39,4 +39,15 @@ $GLOBALS['TL_DCA']['tl_module']['fields']['xing_template'] = array
     'explanation'	          => 'xing_help_template',
     'sql'                     => "varchar(32) NOT NULL default ''",
     'eval'                    => array('helpwizard'=>true,'tl_class'=>'w50')
+);
+$GLOBALS['TL_DCA']['tl_module']['fields']['xing_source'] = array
+(
+    'label'                   => &$GLOBALS['TL_LANG']['tl_module']['xing_source'],
+    'exclude'                 => true,
+    'inputType'               => 'select',
+    'options'                 => array('xing_local', 'xing_server'),
+    'reference'               => &$GLOBALS['TL_LANG']['tl_module'],
+    //'explanation'	          => 'xing_help_source',
+    'sql'                     => "varchar(32) NOT NULL default 'xing_local'",
+    'eval'                    => array('helpwizard'=>false,'tl_class'=>'w50')
 );
