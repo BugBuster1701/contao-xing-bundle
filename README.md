@@ -3,7 +3,7 @@
 
 [![Latest Stable Version](https://poser.pugx.org/bugbuster/contao-xing-bundle/v/stable.svg)](https://packagist.org/packages/bugbuster/contao-xing-bundle) [![Total Downloads](https://poser.pugx.org/bugbuster/contao-xing-bundle/downloads.svg)](https://packagist.org/packages/bugbuster/contao-xing-bundle) [![Latest Unstable Version](https://poser.pugx.org/bugbuster/contao-xing-bundle/v/unstable.svg)](https://packagist.org/packages/bugbuster/contao-xing-bundle) [![License](https://poser.pugx.org/bugbuster/contao-xing-bundle/license.svg)](https://packagist.org/packages/bugbuster/contao-xing-bundle)
 
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/d95002f6-9ba5-4b5f-8c2a-5d2f3ffbfe84/small.png)](https://insight.sensiolabs.com/projects/d95002f6-9ba5-4b5f-8c2a-5d2f3ffbfe84)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/30792dc329dc43f59b8ba621bd4bcd67)](https://www.codacy.com/app/BugBuster1701/contao-xing-bundle?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=BugBuster1701/contao-xing-bundle&amp;utm_campaign=Badge_Grade)
 
 
 ## About

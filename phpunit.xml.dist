@@ -6,7 +6,7 @@
 >
 
     <testsuites>
-        <testsuite name="VisitorsTest">
+        <testsuite name="XingTest">
             <directory>./tests</directory>
             <exclude>./tests/vendor</exclude>
         </testsuite>
