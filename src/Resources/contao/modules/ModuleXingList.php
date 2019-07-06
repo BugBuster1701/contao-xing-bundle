@@ -5,7 +5,6 @@
  *
  * @copyright  Glen Langer 2008..2018 <http://contao.ninja>
  * @author     Glen Langer (BugBuster)
- * @package    Xing
  * @license    LGPL
  * @filesource
  * @see	       https://github.com/BugBuster1701/contao-xing-bundle
@@ -14,17 +13,17 @@
 /**
  * Run in a custom namespace, so the class can be replaced
  */
+
 namespace BugBuster\Xing;
 use BugBuster\Xing\XingImage;
-use Psr\Log\LogLevel;
 use Contao\CoreBundle\Monolog\ContaoContext;
+use Psr\Log\LogLevel;
 
 /**
  * Class ModuleXingList
  *
  * @copyright  Glen Langer 2008..2018
  * @author     Glen Langer (BugBuster)
- * @package    Xing
  */
 class ModuleXingList extends \Module
 {
@@ -52,7 +51,6 @@ class ModuleXingList extends \Module
 	 */
 	const XINGLIST_VERSION = '1.1.0';
 
-
 	/**
 	 * Display a wildcard in the back end
 	 * @return string
@@ -68,20 +66,20 @@ class ModuleXingList extends \Module
             $objTemplate->link = $this->name;
             // Code für Versionen ab 3.0.0
             $objTemplate->href = 'contao/main.php?do=themes&amp;table=tl_module&amp;act=edit&amp;id=' . $this->id;
+
 			return $objTemplate->parse();
 		}
 
 		$this->xing_category = \StringUtil::deserialize($this->xing_categories, true);
 
 		// Return if there are no categories
-		if (!is_array($this->xing_category) || !is_numeric($this->xing_category[0]))
+		if (!\is_array($this->xing_category) || !is_numeric($this->xing_category[0]))
 		{
 			return '';
 		}
 
 		return parent::generate();
 	}
-
 
 	/**
 	 * Generate module
@@ -102,6 +100,7 @@ class ModuleXingList extends \Module
             $strText = 'mod_xing_empty, numRows < 1';
             $logger = static::getContainer()->get('monolog.logger.contao');
             $logger->log(LogLevel::ERROR, $strText, array('contao' => new ContaoContext('XingList', TL_ERROR)));
+
 			return;
 		}
 

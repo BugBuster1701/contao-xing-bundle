@@ -1,16 +1,14 @@
-<?php 
+<?php
 
 /**
  * Contao Open Source CMS, Copyright (C) 2005-2018 Leo Feyer
  *
  * @copyright  Glen Langer 2008..2018 <http://contao.ninja>
  * @author     Glen Langer (BugBuster)
- * @package    Xing
  * @license    LGPL
  * @filesource
  * @see	       https://github.com/BugBuster1701/contao-xing-bundle
  */
-
 
 /**
  * Table tl_xing_category 

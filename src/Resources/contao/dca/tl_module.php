@@ -1,16 +1,14 @@
-<?php 
+<?php
 
 /**
  * Contao Open Source CMS, Copyright (C) 2005-2018 Leo Feyer
  *
  * @copyright  Glen Langer 2008..2018 <http://contao.ninja>
  * @author     Glen Langer (BugBuster)
- * @package    Xing
  * @license    LGPL
  * @filesource
  * @see	       https://github.com/BugBuster1701/contao-xing-bundle
  */
-
 
 /**
  * Add palettes to tl_module
@@ -38,7 +36,7 @@ $GLOBALS['TL_DCA']['tl_module']['fields']['xing_template'] = array
     'options_callback'        => array('BugBuster\Xing\DcaModuleXing', 'getXingTemplates'), 
     'explanation'	          => 'xing_help_template',
     'sql'                     => "varchar(32) NOT NULL default ''",
-    'eval'                    => array('helpwizard'=>true,'tl_class'=>'w50')
+    'eval'                    => array('helpwizard'=>true, 'tl_class'=>'w50')
 );
 $GLOBALS['TL_DCA']['tl_module']['fields']['xing_source'] = array
 (
@@ -49,5 +47,5 @@ $GLOBALS['TL_DCA']['tl_module']['fields']['xing_source'] = array
     'reference'               => &$GLOBALS['TL_LANG']['tl_module'],
     //'explanation'	          => 'xing_help_source',
     'sql'                     => "varchar(32) NOT NULL default 'xing_local'",
-    'eval'                    => array('helpwizard'=>false,'tl_class'=>'w50')
+    'eval'                    => array('helpwizard'=>false, 'tl_class'=>'w50')
 );

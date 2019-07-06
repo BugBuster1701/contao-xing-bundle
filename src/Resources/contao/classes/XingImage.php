@@ -1,11 +1,10 @@
-<?php 
+<?php
 
 /**
  * Contao Open Source CMS, Copyright (C) 2005-2018 Leo Feyer
  * 
  * @copyright  Glen Langer 2008..2018 <http://contao.ninja>
  * @author     Glen Langer (BugBuster)
- * @package    Xing
  * @license    LGPL
  * @filesource
  * @see	       https://github.com/BugBuster1701/contao-xing-bundle
@@ -14,11 +13,11 @@
 /**
  * Run in a custom namespace, so the class can be replaced
  */
+
 namespace BugBuster\Xing;
 
 /**
  * Class XingImage 
- *
  */
 class XingImage
 {
@@ -35,25 +34,25 @@ class XingImage
 	    $xingSrcProfile = '//www.xing.com/img/buttons/';
 	    $xingSrcCompany = '//www.xing.com/img/xing/xe/corporate_pages/';
 	    $xingSrcLocal   = 'bundles/bugbusterxing/';
-	    
+
 	    if (file_exists(TL_ROOT . "/vendor/bugbuster/contao-xing-bundle/src/Resources/contao/config/xing_image_definitions.php"))
 	    {
 	        include(TL_ROOT . "/vendor/bugbuster/contao-xing-bundle/src/Resources/contao/config/xing_image_definitions.php");
 	    }
-	    
+
 	    if (isset($arrXingImageDefinitions[$xinglayout])) 
 	    {
             $this->image_file  = $arrXingImageDefinitions[$xinglayout]['image_file'];
     		$this->image_size  = $arrXingImageDefinitions[$xinglayout]['image_size'];
     		$this->image_title = $arrXingImageDefinitions[$xinglayout]['image_title'];
 	    }
-        
+
 	    if ('xing_local' == $xing_source || '' == $xing_source)
 	    {
 	        $xingSrcProfile = $xingSrcLocal;
 	        $xingSrcCompany = $xingSrcLocal;
 	    }
-	    
+
     	if ($xinglayout < 999) 
     	{
     	    $xing_images = '<img src="'.$xingSrcProfile.$this->image_file.'" '.$this->image_size.' alt="XING" title="'.$this->image_title.'">';
@@ -62,9 +61,9 @@ class XingImage
     	{
     	    $xing_images = '<img src="'.$xingSrcCompany.$this->image_file.'" '.$this->image_size.' alt="XING" title="'.$this->image_title.'">';
     	}
+
         return $xing_images;
 	} // getXingImageLink
-	
 
 } // class
 
