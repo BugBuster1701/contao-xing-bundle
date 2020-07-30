@@ -24,10 +24,7 @@ $GLOBALS['BE_MOD']['content']['xing'] = array
 /**
  * Front end modules
  */
-array_insert($GLOBALS['FE_MOD'], 4, array
+$GLOBALS['FE_MOD']['xing'] = array
 (
-	'xing' => array
-	(
-		'xinglist'   => 'BugBuster\Xing\ModuleXingList'
-	)
-));
+	'xinglist'   => 'BugBuster\Xing\ModuleXingList'
+);

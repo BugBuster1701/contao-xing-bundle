@@ -27,7 +27,7 @@ use Psr\Log\LogLevel;
  * @copyright  Glen Langer 2008..2018
  * @author     Glen Langer (BugBuster)
  */
-class ModuleXingList extends \Module
+class ModuleXingList extends \Contao\Module
 {
 
 	/**
