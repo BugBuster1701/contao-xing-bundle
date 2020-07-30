@@ -1,13 +1,15 @@
 <?php
 
-/**
- * Contao Open Source CMS, Copyright (C) 2005-2018 Leo Feyer
- * 
- * @copyright  Glen Langer 2008..2018 <http://contao.ninja>
+/*
+ * Extension for Contao Open Source CMS.
+ *
+ * This file is part of a BugBuster Contao Bundle
+ *
+ * @copyright  Glen Langer 2020 <http://contao.ninja>
  * @author     Glen Langer (BugBuster)
- * @license    LGPL
- * @filesource
- * @see	       https://github.com/BugBuster1701/contao-xing-bundle
+ * @package    Xing
+ * @license    LGPL-3.0-or-later
+ * @see        https://github.com/BugBuster1701/contao-xing-bundle
  */
 
 //DE

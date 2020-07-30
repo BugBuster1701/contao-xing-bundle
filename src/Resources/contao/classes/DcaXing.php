@@ -1,15 +1,15 @@
 <?php
 
-/**
- * Contao Open Source CMS, Copyright (C) 2005-2018 Leo Feyer
- * 
- * Contao Module "Xing" - DCA Helper Class DcaXing
- * 
- * @copyright  Glen Langer 2008..2018 <http://contao.ninja>
+/*
+ * Extension for Contao Open Source CMS.
+ *
+ * This file is part of a BugBuster Contao Bundle
+ *
+ * @copyright  Glen Langer 2020 <http://contao.ninja>
  * @author     Glen Langer (BugBuster)
- * @license    LGPL
- * @filesource
- * @see	       https://github.com/BugBuster1701/contao-xing-bundle
+ * @package    Xing
+ * @license    LGPL-3.0-or-later
+ * @see        https://github.com/BugBuster1701/contao-xing-bundle
  */
 
 /**
@@ -27,7 +27,7 @@ use Psr\Log\LogLevel;
  * @copyright  Glen Langer 2008..2018 <http://contao.ninja>
  * @author     Glen Langer (BugBuster)
  */
-class DcaXing extends \Backend
+class DcaXing extends \Contao\Backend
 {
     /**
      * Import the back end user object
@@ -66,9 +66,9 @@ class DcaXing extends \Backend
 	 */
 	public function toggleIcon($row, $href, $label, $title, $icon, $attributes)
 	{
-		if (\strlen(\Input::get('tid')))
+		if (\strlen(\Contao\Input::get('tid')))
 		{
-			$this->toggleVisibility(\Input::get('tid'), (\Input::get('state') == 1));
+			$this->toggleVisibility(\Contao\Input::get('tid'), (\Contao\Input::get('state') == 1));
 			$this->redirect($this->getReferer());
 		}
 
@@ -85,7 +85,7 @@ class DcaXing extends \Backend
 			$icon = 'invisible.gif';
 		}		
 
-		return '<a href="'.$this->addToUrl($href.'&amp;id='.\Input::get('id')).'" title="'.specialchars($title).'"'.$attributes.'>'.\Image::getHtml($icon, $label).'</a> ';
+		return '<a href="'.$this->addToUrl($href.'&amp;id='.\Contao\Input::get('id')).'" title="'.\Contao\StringUtil::specialchars($title).'"'.$attributes.'>'.\Contao\Image::getHtml($icon, $label).'</a> ';
 	}
 
 	/**
@@ -100,7 +100,7 @@ class DcaXing extends \Backend
         {
 			$strText = 'Not enough permissions to publish/unpublish Xing Profile ID "'.$intId.'"';
 
-			$logger = static::getContainer()->get('monolog.logger.contao');
+			$logger = \Contao\System::getContainer()->get('monolog.logger.contao');
 			$logger->log(LogLevel::ERROR, $strText, array('contao' => new ContaoContext('tl_xing toggleVisibility', TL_ERROR)));
 
 			$this->redirect('contao/main.php?act=error');

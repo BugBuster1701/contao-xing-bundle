@@ -1,5 +1,17 @@
 <?php
 
+$header = <<<EOF
+Extension for Contao Open Source CMS.
+
+This file is part of a BugBuster Contao Bundle
+
+@copyright  Glen Langer 2020 <http://contao.ninja>
+@author     Glen Langer (BugBuster)
+@package    Xing
+@license    LGPL-3.0-or-later
+@see        https://github.com/BugBuster1701/contao-xing-bundle
+EOF;
+
 $finder = PhpCsFixer\Finder::create()
     ->exclude('languages')
     ->exclude('templates')
@@ -22,6 +34,7 @@ return PhpCsFixer\Config::create()
         'escape_implicit_backslashes' => true,
         'function_declaration' => true,
         'function_typehint_space' => true,
+        'header_comment' => ['header' => $header],
         'linebreak_after_opening_tag' => true,
         'lowercase_cast' => true,
         'lowercase_keywords' => true,
