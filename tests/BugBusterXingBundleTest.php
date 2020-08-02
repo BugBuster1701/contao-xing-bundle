@@ -1,10 +1,10 @@
 <?php
 
 /*
- * @copyright  Glen Langer 2008..2018 <http://contao.ninja>
+ * @copyright  Glen Langer 2008..2020<http://contao.ninja>
  * @author     Glen Langer (BugBuster)
  * @package    Xing
- * @license    LGPL-3.0+
+ * @license    LGPL-3.0-or-later
  * @see	       https://github.com/BugBuster1701/contao-xing-bundle
  */
 
