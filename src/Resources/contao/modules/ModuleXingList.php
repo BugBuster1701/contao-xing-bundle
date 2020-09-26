@@ -138,7 +138,7 @@ class ModuleXingList extends \Contao\Module
 				);
 			}
 		} // while
-		if (($this->xing_template != $this->strTemplate) && ($this->xing_template != ''))
+		if (($this->xing_template != $this->strTemplate) && ($this->xing_template))
 		{
 	        $this->strTemplate = $this->xing_template;
 	        $this->Template = new \FrontendTemplate($this->strTemplate);

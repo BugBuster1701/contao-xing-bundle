@@ -49,7 +49,7 @@ class XingImage
     		$this->image_title = $arrXingImageDefinitions[$xinglayout]['image_title'];
 	    }
 
-	    if ('xing_local' == $xing_source || '' == $xing_source)
+	    if ('xing_local' == $xing_source || !$xing_source)
 	    {
 	        $xingSrcProfile = $xingSrcLocal;
 	        $xingSrcCompany = $xingSrcLocal;

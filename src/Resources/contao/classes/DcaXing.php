@@ -43,7 +43,7 @@ class DcaXing extends \Contao\Backend
         $style = 'style="font-size:11px;margin-bottom:10px;"';
 
 		$key = $arrRow['published'] ? 'published' : 'unpublished';
-		$date = date($GLOBALS['TL_CONFIG']['datimFormat'], $arrRow['tstamp']);
+		$date = date($GLOBALS['TL_CONFIG']['datimFormat'], (int) $arrRow['tstamp']);
 
 		$XingImage = new XingImage(); // classes/XingImage.php
 		$xing_images = $XingImage->getXingImageLink($arrRow['xinglayout']);
@@ -68,7 +68,7 @@ class DcaXing extends \Contao\Backend
 	{
 		if (\strlen(\Contao\Input::get('tid')))
 		{
-			$this->toggleVisibility(\Contao\Input::get('tid'), (\Contao\Input::get('state') == 1));
+			$this->toggleVisibility(\Contao\Input::get('tid'), ((int) \Contao\Input::get('state') == 1));
 			$this->redirect($this->getReferer());
 		}
 
