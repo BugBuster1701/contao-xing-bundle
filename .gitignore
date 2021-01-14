@@ -2,6 +2,7 @@
 .settings/
 .buildpath
 .project
+.phpunit.result.cache
 # Transifex
 /.tx/
 vendor/
