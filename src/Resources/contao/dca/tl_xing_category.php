@@ -5,7 +5,7 @@
  *
  * This file is part of a BugBuster Contao Bundle
  *
- * @copyright  Glen Langer 2020 <http://contao.ninja>
+ * @copyright  Glen Langer 2021 <http://contao.ninja>
  * @author     Glen Langer (BugBuster)
  * @package    Xing
  * @license    LGPL-3.0-or-later
@@ -78,7 +78,7 @@ $GLOBALS['TL_DCA']['tl_xing_category'] = array
 				'label'               => &$GLOBALS['TL_LANG']['tl_xing_category']['delete'],
 				'href'                => 'act=delete',
 				'icon'                => 'delete.gif',
-				'attributes'          => 'onclick="if (!confirm(\'' . $GLOBALS['TL_LANG']['tl_xing_category']['deleteConfirm'] . '\')) return false; Backend.getScrollOffset();"'
+				'attributes'          => 'onclick="if (!confirm(\'' . ($GLOBALS['TL_LANG']['tl_xing_category']['deleteConfirm'] ?? null) . '\')) return false; Backend.getScrollOffset();"'
 			),
 			'show' => array
 			(
