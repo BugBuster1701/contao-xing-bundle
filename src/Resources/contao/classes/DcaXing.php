@@ -18,7 +18,9 @@
 
 namespace BugBuster\Xing;
 use BugBuster\Xing\XingImage;
+use Contao\BackendUser;
 use Contao\CoreBundle\Monolog\ContaoContext;
+
 use Psr\Log\LogLevel;
 
 /**
@@ -35,7 +37,7 @@ class DcaXing extends \Contao\Backend
     public function __construct()
     {
             parent::__construct();
-            $this->import('BackendUser', 'User');
+            //$this->import('BackendUser', 'User');
     }
 
 	public function listProfiles($arrRow)
@@ -64,50 +66,51 @@ class DcaXing extends \Contao\Backend
 	 * @param string
 	 * @return string
 	 */
-	public function toggleIcon($row, $href, $label, $title, $icon, $attributes)
-	{
-		if (\strlen(\Contao\Input::get('tid')))
-		{
-			$this->toggleVisibility(\Contao\Input::get('tid'), ((int) \Contao\Input::get('state') == 1));
-			$this->redirect($this->getReferer());
-		}
+	// public function toggleIcon($row, $href, $label, $title, $icon, $attributes)
+	// {
+	// 	if (\strlen(\Contao\Input::get('tid')))
+	// 	{
+	// 		$this->toggleVisibility(\Contao\Input::get('tid'), ((int) \Contao\Input::get('state') == 1));
+	// 		$this->redirect($this->getReferer());
+	// 	}
+	// 	$user = BackendUser::getInstance();
+	// 	// Check permissions AFTER checking the tid, so hacking attempts are logged
+    //     if (!$user->isAdmin && !$user->hasAccess('tl_xing::published', 'alexf'))
+    //     {
+    //             return '';
+    //     }
 
-		// Check permissions AFTER checking the tid, so hacking attempts are logged
-        if (!$this->User->isAdmin && !$this->User->hasAccess('tl_xing::published', 'alexf'))
-        {
-                return '';
-        }
+	// 	$href .= '&amp;tid='.$row['id'].'&amp;state='. ($row['published'] ? '' : 1);
 
-		$href .= '&amp;tid='.$row['id'].'&amp;state='. ($row['published'] ? '' : 1);
+	// 	if (!$row['published'])
+	// 	{
+	// 		$icon = 'invisible.gif';
+	// 	}		
 
-		if (!$row['published'])
-		{
-			$icon = 'invisible.gif';
-		}		
+	// 	return '<a href="'.$this->addToUrl($href.'&amp;id='.\Contao\Input::get('id')).'" title="'.\Contao\StringUtil::specialchars($title).'"'.$attributes.'>'.\Contao\Image::getHtml($icon, $label).'</a> ';
+	// }
 
-		return '<a href="'.$this->addToUrl($href.'&amp;id='.\Contao\Input::get('id')).'" title="'.\Contao\StringUtil::specialchars($title).'"'.$attributes.'>'.\Contao\Image::getHtml($icon, $label).'</a> ';
-	}
+	// /**
+	//  * Disable/enable xing profile
+	//  * @param integer
+	//  * @param boolean
+	//  */
+	// public function toggleVisibility($intId, $blnVisible)
+	// {
+	// 	$user = BackendUser::getInstance();
+	//     // Check permissions to publish	    
+    //     if (!$user->isAdmin && !$user->hasAccess('tl_xing::published', 'alexf'))
+    //     {
+	// 		$strText = 'Not enough permissions to publish/unpublish Xing Profile ID "'.$intId.'"';
 
-	/**
-	 * Disable/enable xing profile
-	 * @param integer
-	 * @param boolean
-	 */
-	public function toggleVisibility($intId, $blnVisible)
-	{
-	    // Check permissions to publish	    
-        if (!$this->User->isAdmin && !$this->User->hasAccess('tl_xing::published', 'alexf'))
-        {
-			$strText = 'Not enough permissions to publish/unpublish Xing Profile ID "'.$intId.'"';
+	// 		$logger = \Contao\System::getContainer()->get('monolog.logger.contao');
+	// 		$logger->log(LogLevel::ERROR, $strText, array('contao' => new ContaoContext('tl_xing toggleVisibility', ContaoContext::ERROR)));
 
-			$logger = \Contao\System::getContainer()->get('monolog.logger.contao');
-			$logger->log(LogLevel::ERROR, $strText, array('contao' => new ContaoContext('tl_xing toggleVisibility', TL_ERROR)));
-
-			$this->redirect('contao/main.php?act=error');
-        }
-		// Update database
-		$this->Database->prepare("UPDATE tl_xing SET published='" . ($blnVisible ? 1 : '') . "' WHERE id=?")
-					   ->execute($intId);
-	}
+	// 		$this->redirect('contao/main.php?act=error');
+    //     }
+	// 	// Update database
+	// 	$this->Database->prepare("UPDATE tl_xing SET published='" . ($blnVisible ? 1 : '') . "' WHERE id=?")
+	// 				   ->execute($intId);
+	// }
 }
 

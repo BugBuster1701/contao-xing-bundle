@@ -12,9 +12,7 @@
  * @see        https://github.com/BugBuster1701/contao-xing-bundle
  */
 
-/**
- * Load tl_content language file
- */
+use Contao\DC_Table;
 
 /**
  * Table tl_xing 
@@ -25,7 +23,7 @@ $GLOBALS['TL_DCA']['tl_xing'] = array
 	// Config
 	'config' => array
 	(
-		'dataContainer'               => 'Table',
+		'dataContainer'               => DC_Table::class,
 		'ptable'                      => 'tl_xing_category',
 		'enableVersioning'            => true,
         'sql' => array
@@ -63,45 +61,17 @@ $GLOBALS['TL_DCA']['tl_xing'] = array
 		),
 		'operations' => array
 		(
-			'edit' => array
-			(
-				'label'               => &$GLOBALS['TL_LANG']['tl_xing']['edit'],
-				'href'                => 'act=edit',
-				'icon'                => 'edit.gif'
-			),
-			'copy' => array
-			(
-				'label'               => &$GLOBALS['TL_LANG']['tl_xing']['copy'],
-				'href'                => 'act=paste&amp;mode=copy',
-				'icon'                => 'copy.gif'
-			),
-			'cut' => array
-			(
-				'label'               => &$GLOBALS['TL_LANG']['tl_xing']['cut'],
-				'href'                => 'act=paste&amp;mode=cut',
-				'icon'                => 'cut.gif'
-			),
-			'delete' => array
-			(
-				'label'               => &$GLOBALS['TL_LANG']['tl_xing']['delete'],
-				'href'                => 'act=delete',
-				'icon'                => 'delete.gif',
-				'attributes'          => 'onclick="if (!confirm(\'' . ($GLOBALS['TL_LANG']['MSC']['deleteConfirm'] ?? null ) . '\')) return false; Backend.getScrollOffset();"'
-			),
+			'edit',
+			'copy',
+			'cut',
+			'delete',
 			'toggle' => array
 			(
-				'label'               => &$GLOBALS['TL_LANG']['tl_xing']['toggle'],
-				'icon'                => 'visible.gif',
-				//'attributes'          => 'onclick="Backend.getScrollOffset();"',
-				'attributes'          => 'onclick="Backend.getScrollOffset(); return AjaxRequest.toggleVisibility(this, %s);"',
-				'button_callback'     => array('BugBuster\Xing\DcaXing', 'toggleIcon')
+				'href'                => 'act=toggle&amp;field=published',
+				'icon'                => 'visible.svg',
+				'showInHeader'        => true
 			),
-			'show' => array
-			(
-				'label'               => &$GLOBALS['TL_LANG']['tl_xing']['show'],
-				'href'                => 'act=show',
-				'icon'                => 'show.gif'
-			)
+			'show'
 		)
 	),
 

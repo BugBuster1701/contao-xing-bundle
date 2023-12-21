@@ -12,6 +12,9 @@
  * @see        https://github.com/BugBuster1701/contao-xing-bundle
  */
 
+use Contao\DC_Table;
+use Contao\DataContainer;
+
 /**
  * Table tl_xing_category 
  */
@@ -21,7 +24,7 @@ $GLOBALS['TL_DCA']['tl_xing_category'] = array
 	// Config
 	'config' => array
 	(
-		'dataContainer'               => 'Table',
+		'dataContainer'               => DC_Table::class,
 		'ctable'                      => array('tl_xing'),
 		'switchToEdit'                => true,
 		'enableVersioning'            => true,
@@ -39,9 +42,9 @@ $GLOBALS['TL_DCA']['tl_xing_category'] = array
 	(
 		'sorting' => array
 		(
-			'mode'                    => 1,
+			'mode'                    => DataContainer::MODE_SORTED,
 			'fields'                  => array('title'),
-			'flag'                    => 1,
+			'flag'                    => DataContainer::SORT_INITIAL_LETTER_ASC,
 			'panelLayout'             => 'search,limit'
 		),
 		'label' => array
@@ -65,26 +68,26 @@ $GLOBALS['TL_DCA']['tl_xing_category'] = array
 			(
 				'label'               => &$GLOBALS['TL_LANG']['tl_xing_category']['edit'],
 				'href'                => 'table=tl_xing',
-				'icon'                => 'edit.gif'
+				'icon'                => 'edit.svg'
 			),
 			'copy' => array
 			(
 				'label'               => &$GLOBALS['TL_LANG']['tl_xing_category']['copy'],
 				'href'                => 'act=copy',
-				'icon'                => 'copy.gif'
+				'icon'                => 'copy.svg'
 			),
 			'delete' => array
 			(
 				'label'               => &$GLOBALS['TL_LANG']['tl_xing_category']['delete'],
 				'href'                => 'act=delete',
-				'icon'                => 'delete.gif',
+				'icon'                => 'delete.svg',
 				'attributes'          => 'onclick="if (!confirm(\'' . ($GLOBALS['TL_LANG']['tl_xing_category']['deleteConfirm'] ?? null) . '\')) return false; Backend.getScrollOffset();"'
 			),
 			'show' => array
 			(
 				'label'               => &$GLOBALS['TL_LANG']['tl_xing_category']['show'],
 				'href'                => 'act=show',
-				'icon'                => 'show.gif'
+				'icon'                => 'show.svg'
 			)
 		)
 	),

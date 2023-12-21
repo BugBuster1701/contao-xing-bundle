@@ -24,7 +24,7 @@ namespace BugBuster\Xing;
  * @copyright  Glen Langer 2008..2019 <http://contao.ninja>
  * @author     Glen Langer (BugBuster)
  */
-class DcaModuleXing extends \Backend 
+class DcaModuleXing extends \Contao\Backend 
 {
 	public function getXingTemplates()
 	{

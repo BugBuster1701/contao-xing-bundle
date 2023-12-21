@@ -37,9 +37,10 @@ class XingImage
 	    $xingSrcCompany = '//www.xing.com/img/xing/xe/corporate_pages/';
 	    $xingSrcLocal   = 'bundles/bugbusterxing/';
 
-	    if (file_exists(TL_ROOT . "/vendor/bugbuster/contao-xing-bundle/src/Resources/contao/config/xing_image_definitions.php"))
+		$rootDir = \Contao\System::getContainer()->getParameter('kernel.project_dir');
+	    if (file_exists($rootDir . "/vendor/bugbuster/contao-xing-bundle/src/Resources/contao/config/xing_image_definitions.php"))
 	    {
-	        include(TL_ROOT . "/vendor/bugbuster/contao-xing-bundle/src/Resources/contao/config/xing_image_definitions.php");
+	        include($rootDir . "/vendor/bugbuster/contao-xing-bundle/src/Resources/contao/config/xing_image_definitions.php");
 	    }
 
 	    if (isset($arrXingImageDefinitions[$xinglayout])) 
