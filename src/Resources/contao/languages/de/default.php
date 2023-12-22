@@ -11,5 +11,5 @@
  * last-updated: 2015-09-15T00:08:22+02:00
  */
 
-$GLOBALS['TL_LANG']['XingList']['warning'] = 'ERROR: Contao Xing Bundle benötigt mindestens Contao 4.0';
+$GLOBALS['TL_LANG']['XingList']['warning'] = 'ERROR: Contao Xing Bundle benötigt mindestens Contao 5.2';
 

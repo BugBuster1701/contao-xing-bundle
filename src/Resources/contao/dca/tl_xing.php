@@ -138,7 +138,6 @@ $GLOBALS['TL_DCA']['tl_xing'] = array
         'xingtarget' => array
 		(
 			'label'                   => &$GLOBALS['TL_LANG']['tl_xing']['xingtarget'],
-			'exclude'                 => true,
 			'inputType'               => 'checkbox',
 			'sql'                     => "char(1) NOT NULL default ''",
 			'eval'                    => array('tl_class'=>'clr')
@@ -147,7 +146,6 @@ $GLOBALS['TL_DCA']['tl_xing'] = array
 		(
 			'label'                   => &$GLOBALS['TL_LANG']['tl_xing']['published'],
 			'reverseToggle'           => true,
-			'exclude'                 => true,
 			'filter'                  => true,
 			'flag'                    => 2,
 			'inputType'               => 'checkbox',
