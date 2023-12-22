@@ -1,15 +1,14 @@
 <?php
 
 /*
- * Extension for Contao Open Source CMS.
+ * This file is part of a BugBuster Contao Bundle.
  *
- * This file is part of a BugBuster Contao Bundle
- *
- * @copyright  Glen Langer 2021 <http://contao.ninja>
+ * @copyright  Glen Langer 2023 <http://contao.ninja>
  * @author     Glen Langer (BugBuster)
- * @package    Xing
+ * @package    Contao Xing Bundle
+ * @link       https://github.com/BugBuster1701/contao-xing-bundle
+ *
  * @license    LGPL-3.0-or-later
- * @see        https://github.com/BugBuster1701/contao-xing-bundle
  */
 
 /**
@@ -18,16 +17,17 @@
 
 namespace BugBuster\Xing;
 
+use Contao\Backend;
+
 /**
  * DCA Helper Class DcaModuleXing
  *
  * @copyright  Glen Langer 2008..2019 <http://contao.ninja>
- * @author     Glen Langer (BugBuster)
  */
-class DcaModuleXing extends \Contao\Backend 
+class DcaModuleXing extends Backend
 {
 	public function getXingTemplates()
 	{
-	    return $this->getTemplateGroup('mod_xing_list');
-	}  
+		return $this->getTemplateGroup('mod_xing_list');
+	}
 }

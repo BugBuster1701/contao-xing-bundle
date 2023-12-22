@@ -1,15 +1,14 @@
 <?php
 
 /*
- * Extension for Contao Open Source CMS.
+ * This file is part of a BugBuster Contao Bundle.
  *
- * This file is part of a BugBuster Contao Bundle
- *
- * @copyright  Glen Langer 2021 <http://contao.ninja>
+ * @copyright  Glen Langer 2023 <http://contao.ninja>
  * @author     Glen Langer (BugBuster)
- * @package    Xing
+ * @package    Contao Xing Bundle
+ * @link       https://github.com/BugBuster1701/contao-xing-bundle
+ *
  * @license    LGPL-3.0-or-later
- * @see        https://github.com/BugBuster1701/contao-xing-bundle
  */
 
 /**
@@ -18,7 +17,7 @@
 
 namespace BugBuster\Xing;
 
-use BugBuster\Xing\XingImage;
+use Contao\Backend;
 use Contao\CoreBundle\Security\ContaoCorePermissions;
 use Contao\Image;
 use Contao\StringUtil;
@@ -28,21 +27,20 @@ use Contao\System;
  * DCA Helper Class DcaXing
  *
  * @copyright  Glen Langer 2008..2018 <http://contao.ninja>
- * @author     Glen Langer (BugBuster)
  */
-class DcaXing extends \Contao\Backend
+class DcaXing extends Backend
 {
-    /**
-     * Import the back end user object
-     */
-    public function __construct()
-    {
-            parent::__construct();
-    }
+	/**
+	 * Import the back end user object
+	 */
+	public function __construct()
+	{
+		parent::__construct();
+	}
 
 	public function listProfiles($arrRow)
 	{
-        $style = 'style="font-size:11px;margin-bottom:10px;"';
+		$style = 'style="font-size:11px;margin-bottom:10px;"';
 
 		$key = $arrRow['published'] ? 'published' : 'unpublished';
 		$date = date($GLOBALS['TL_CONFIG']['datimFormat'], (int) $arrRow['tstamp']);
@@ -51,9 +49,8 @@ class DcaXing extends \Contao\Backend
 		$xing_images = $XingImage->getXingImageLink($arrRow['xinglayout']);
 
 		return '
-<div class="cte_type ' . $key . '" ' . $style . '><strong>' . $arrRow['xingprofil'] . '</strong> - ' . $date . '</div>' 
-		.$xing_images;
-
+<div class="cte_type ' . $key . '" ' . $style . '><strong>' . $arrRow['xingprofil'] . '</strong> - ' . $date . '</div>'
+		. $xing_images;
 	}
 
 	/**
@@ -83,9 +80,8 @@ class DcaXing extends \Contao\Backend
 			$icon = 'invisible.svg';
 		}
 
-		$titleDisabled = (is_array($GLOBALS['TL_DCA']['tl_xing']['list']['operations']['toggle']['label']) && isset($GLOBALS['TL_DCA']['tl_xing']['list']['operations']['toggle']['label'][2])) ? sprintf($GLOBALS['TL_DCA']['tl_xing']['list']['operations']['toggle']['label'][2], $row['id']) : $title;
+		$titleDisabled = (\is_array($GLOBALS['TL_DCA']['tl_xing']['list']['operations']['toggle']['label']) && isset($GLOBALS['TL_DCA']['tl_xing']['list']['operations']['toggle']['label'][2])) ? sprintf($GLOBALS['TL_DCA']['tl_xing']['list']['operations']['toggle']['label'][2], $row['id']) : $title;
 
 		return '<a href="' . $this->addToUrl($href) . '" title="' . StringUtil::specialchars($row['published'] ? $title : $titleDisabled) . '" data-title="' . StringUtil::specialchars($title) . '" data-title-disabled="' . StringUtil::specialchars($titleDisabled) . '" onclick="Backend.getScrollOffset();return AjaxRequest.toggleField(this,true)">' . Image::getHtml($icon, $label, 'data-icon="visible.svg" data-icon-disabled="invisible.svg" data-state="' . ($row['published'] ? 1 : 0) . '"') . '</a> ';
 	}
-
 }

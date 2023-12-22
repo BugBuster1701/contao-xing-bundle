@@ -1,26 +1,24 @@
 <?php
 
 /*
- * Extension for Contao Open Source CMS.
+ * This file is part of a BugBuster Contao Bundle.
  *
- * This file is part of a BugBuster Contao Bundle
- *
- * @copyright  Glen Langer 2021 <http://contao.ninja>
+ * @copyright  Glen Langer 2023 <http://contao.ninja>
  * @author     Glen Langer (BugBuster)
- * @package    Xing
+ * @package    Contao Xing Bundle
+ * @link       https://github.com/BugBuster1701/contao-xing-bundle
+ *
  * @license    LGPL-3.0-or-later
- * @see        https://github.com/BugBuster1701/contao-xing-bundle
  */
 
-use Contao\DC_Table;
 use Contao\DataContainer;
+use Contao\DC_Table;
 
-/**
- * Table tl_xing_category 
+/*
+ * Table tl_xing_category
  */
 $GLOBALS['TL_DCA']['tl_xing_category'] = array
 (
-
 	// Config
 	'config' => array
 	(
@@ -28,13 +26,13 @@ $GLOBALS['TL_DCA']['tl_xing_category'] = array
 		'ctable'                      => array('tl_xing'),
 		'switchToEdit'                => true,
 		'enableVersioning'            => true,
-        'sql' => array
-        (
-            'keys' => array
-            (
-                'id'    => 'primary'
-            )
-        ),
+		'sql' => array
+		(
+			'keys' => array
+			(
+				'id'    => 'primary'
+			)
+		),
 	),
 
 	// List
@@ -50,7 +48,7 @@ $GLOBALS['TL_DCA']['tl_xing_category'] = array
 		'label' => array
 		(
 			'fields'                  => array('title'),
-			'format'                  => '%s' 
+			'format'                  => '%s'
 		),
 		'global_operations' => array
 		(
@@ -101,14 +99,14 @@ $GLOBALS['TL_DCA']['tl_xing_category'] = array
 	// Fields
 	'fields' => array
 	(
-    	'id' => array
-    	(
-	        'sql'                     => "int(10) unsigned NOT NULL auto_increment"
-    	),
-    	'tstamp' => array
-    	(
-	        'sql'                     => "int(10) unsigned NOT NULL default '0'"
-    	),
+		'id' => array
+		(
+			'sql'                     => "int(10) unsigned NOT NULL auto_increment"
+		),
+		'tstamp' => array
+		(
+			'sql'                     => "int(10) unsigned NOT NULL default '0'"
+		),
 		'title' => array
 		(
 			'label'                   => &$GLOBALS['TL_LANG']['tl_xing_category']['title'],
@@ -120,4 +118,3 @@ $GLOBALS['TL_DCA']['tl_xing_category'] = array
 		),
 	)
 );
-
