@@ -17,11 +17,15 @@
  */
 
 namespace BugBuster\Xing;
-use BugBuster\Xing\XingImage;
-use Contao\BackendUser;
-use Contao\CoreBundle\Monolog\ContaoContext;
 
-use Psr\Log\LogLevel;
+use BugBuster\Xing\XingImage;
+// use Contao\BackendUser;
+// use Contao\CoreBundle\Monolog\ContaoContext;
+// use Psr\Log\LogLevel;
+use Contao\CoreBundle\Security\ContaoCorePermissions;
+use Contao\Image;
+use Contao\StringUtil;
+use Contao\System;
 
 /**
  * DCA Helper Class DcaXing
@@ -58,38 +62,44 @@ class DcaXing extends \Contao\Backend
 
 	/**
 	 * Return the "toggle visibility" button
-	 * @param array
-	 * @param string
-	 * @param string
-	 * @param string
-	 * @param string
-	 * @param string
+	 *
+	 * @param array  $row
+	 * @param string $href
+	 * @param string $label
+	 * @param string $title
+	 * @param string $icon
+	 * @param string $attributes
+	 *
 	 * @return string
 	 */
-	// public function toggleIcon($row, $href, $label, $title, $icon, $attributes)
-	// {
-	// 	if (\strlen(\Contao\Input::get('tid')))
-	// 	{
-	// 		$this->toggleVisibility(\Contao\Input::get('tid'), ((int) \Contao\Input::get('state') == 1));
-	// 		$this->redirect($this->getReferer());
-	// 	}
-	// 	$user = BackendUser::getInstance();
-	// 	// Check permissions AFTER checking the tid, so hacking attempts are logged
-    //     if (!$user->isAdmin && !$user->hasAccess('tl_xing::published', 'alexf'))
-    //     {
-    //             return '';
-    //     }
+	public function toggleIcon($row, $href, $label, $title, $icon, $attributes)
+	{
+		// Check permissions AFTER checking the tid, so hacking attempts are logged
+		if (!System::getContainer()->get('security.helper')->isGranted(ContaoCorePermissions::USER_CAN_EDIT_FIELD_OF_TABLE, 'tl_xing::published'))
+		{
+			return '';
+		}
 
-	// 	$href .= '&amp;tid='.$row['id'].'&amp;state='. ($row['published'] ? '' : 1);
+		$href .= '&amp;id=' . $row['id'];
 
-	// 	if (!$row['published'])
-	// 	{
-	// 		$icon = 'invisible.gif';
-	// 	}		
+		if (!$row['published'])
+		{
+			$icon = 'invisible.svg';
+		}
 
-	// 	return '<a href="'.$this->addToUrl($href.'&amp;id='.\Contao\Input::get('id')).'" title="'.\Contao\StringUtil::specialchars($title).'"'.$attributes.'>'.\Contao\Image::getHtml($icon, $label).'</a> ';
-	// }
+		// if (!$this->isAllowedToEditComment($row['parent'], $row['source']))
+		// {
+		// 	return Image::getHtml($icon) . ' ';
+		// }
 
+		$titleDisabled = (is_array($GLOBALS['TL_DCA']['tl_xing']['list']['operations']['toggle']['label']) && isset($GLOBALS['TL_DCA']['tl_xing']['list']['operations']['toggle']['label'][2])) ? sprintf($GLOBALS['TL_DCA']['tl_xing']['list']['operations']['toggle']['label'][2], $row['id']) : $title;
+
+		return '<a href="' . $this->addToUrl($href) . '" title="' . StringUtil::specialchars($row['published'] ? $title : $titleDisabled) . '" data-title="' . StringUtil::specialchars($title) . '" data-title-disabled="' . StringUtil::specialchars($titleDisabled) . '" onclick="Backend.getScrollOffset();return AjaxRequest.toggleField(this,true)">' . Image::getHtml($icon, $label, 'data-icon="visible.svg" data-icon-disabled="invisible.svg" data-state="' . ($row['published'] ? 1 : 0) . '"') . '</a> ';
+		//return '<a href="' . $this->addToUrl($href) . '" title="' . StringUtil::specialchars($row['published'] ? $title : $titleDisabled) . '" data-title="' . StringUtil::specialchars($title) . '" data-title-disabled="' . StringUtil::specialchars($titleDisabled) . '">' . Image::getHtml($icon, $label, 'data-icon="visible.svg" data-icon-disabled="invisible.svg" data-state="' . ($row['published'] ? 1 : 0) . '"') . '</a> ';
+
+	}
+
+	
 	// /**
 	//  * Disable/enable xing profile
 	//  * @param integer

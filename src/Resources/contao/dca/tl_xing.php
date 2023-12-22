@@ -13,6 +13,8 @@
  */
 
 use Contao\DC_Table;
+use Contao\DataContainer;
+
 
 /**
  * Table tl_xing 
@@ -41,7 +43,7 @@ $GLOBALS['TL_DCA']['tl_xing'] = array
 	(
 		'sorting' => array
 		(
-			'mode'                    => 4,
+			'mode'                    => DataContainer::MODE_PARENT,
 			'filter'                  => true,
 			'fields'                  => array('sorting'),
 			'panelLayout'             => 'filter;search,limit',
@@ -69,7 +71,8 @@ $GLOBALS['TL_DCA']['tl_xing'] = array
 			(
 				'href'                => 'act=toggle&amp;field=published',
 				'icon'                => 'visible.svg',
-				'showInHeader'        => true
+				//'showInHeader'        => true
+				'button_callback'     => array('BugBuster\Xing\DcaXing', 'toggleIcon')
 			),
 			'show'
 		)
@@ -143,6 +146,7 @@ $GLOBALS['TL_DCA']['tl_xing'] = array
 		'published' => array
 		(
 			'label'                   => &$GLOBALS['TL_LANG']['tl_xing']['published'],
+			'reverseToggle'           => true,
 			'exclude'                 => true,
 			'filter'                  => true,
 			'flag'                    => 2,
