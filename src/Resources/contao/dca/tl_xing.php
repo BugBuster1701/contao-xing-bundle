@@ -145,9 +145,9 @@ $GLOBALS['TL_DCA']['tl_xing'] = array
 		'published' => array
 		(
 			'label'                   => &$GLOBALS['TL_LANG']['tl_xing']['published'],
-			'reverseToggle'           => true,
+			//'reverseToggle'           => true,
 			'filter'                  => true,
-			'flag'                    => 2,
+			'flag'                    => DataContainer::SORT_INITIAL_LETTER_DESC,
 			'inputType'               => 'checkbox',
 			'sql'                     => "char(1) NOT NULL default ''",
 			'eval'                    => array('doNotCopy'=>true)
