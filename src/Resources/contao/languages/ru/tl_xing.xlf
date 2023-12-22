@@ -1,0 +1,390 @@
+<?xml version="1.0" ?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="php" date="2018-05-11T23:36:02+02:00" original="tl_xing" source-language="en" target-language="ru">
+    <body>
+      <trans-unit id="tl_xing.1">
+        <source>DE Variant 1 ( 85x23)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.10">
+        <source>DE Variant 10 (118x23)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.11">
+        <source>EN Variant 1 ( 85x23)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.12">
+        <source>EN Variant 2 (118x23)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.13">
+        <source>EN Variant 3 ( 99x23)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.14">
+        <source>EN Variant 4 (118x23)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.15">
+        <source>EN Variant 5 ( 80x15) Text</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.16">
+        <source>EN Variant 6 ( 99x23)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.17">
+        <source>FR Variant 1 (118x23)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.18">
+        <source>FR Variant 2 (118x23)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.19">
+        <source>FR Variant 3 (118x23)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.2">
+        <source>DE Variant 2 (118x23)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.20">
+        <source>FR Variant 4 (139x23) Premium</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.21">
+        <source>FR Variant 5 (118x23)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.22">
+        <source>FR Variant 6 ( 74x14) Text</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.23">
+        <source>FR Variant 7 (118x23)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.24">
+        <source>PL Variant 1 ( 94x24)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.25">
+        <source>PL Variant 2 (115x23)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.26">
+        <source>PL Variant 3 (100x23)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.27">
+        <source>PL Variant 4 (126x23)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.28">
+        <source>PL Variant 5 (167x23) Premium</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.29">
+        <source>PL Variant 6 (160x24)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.3">
+        <source>DE Variant 3 (118x23)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.30">
+        <source>PL Variant 7 ( 74x14) Text</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.31">
+        <source>PL Variant 8 (130x24)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.4">
+        <source>DE Variant 4 (118x23)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.41">
+        <source>SV Variant 1 (100x22)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.42">
+        <source>SV Variant 2 (119x23)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.43">
+        <source>SV Variant 3 (126x23)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.44">
+        <source>SV Variant 4 (126x23)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.45">
+        <source>SV Variant 5 (151x23) Premium</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.46">
+        <source>SV Variant 6 (133x24)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.47">
+        <source>SV Variant 7 ( 74x14) Text</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.48">
+        <source>SV Variant 8 (112x24)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.5">
+        <source>DE Variant 5 (118x23)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.6">
+        <source>DE Variant 6 (118x23)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.62">
+        <source>JP Variant 1 ( 93x23)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.63">
+        <source>JP Variant 2 (149x23)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.64">
+        <source>JP Variant 3 (160x23)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.65">
+        <source>JP Variant 4 (115x23)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.66">
+        <source>JP Variant 5 (157x23) Premium</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.67">
+        <source>JP Variant 6 (130x23)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.68">
+        <source>JP Variant 7 (100x14) Text</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.69">
+        <source>JP Variant 8 (149x23)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.7">
+        <source>DE Variant 7 (139x23) Premium</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.71">
+        <source>PT Variant 1 (118x23)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.72">
+        <source>PT Variant 2 (118x23)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.73">
+        <source>PT Variant 3 (118x23)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.74">
+        <source>PT Variant 4 (139x23) Premium</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.75">
+        <source>PT Variant 5 (118x23)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.76">
+        <source>PT Variant 6 ( 80x15) Text</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.77">
+        <source>PT Variant 7 (118x23)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.8">
+        <source>DE Variant 8 (118x23)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.9">
+        <source>DE Variant 9 ( 80x15) Text</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.999">
+        <source>Company Button ( 98x23)</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.copy.0">
+        <source>Duplicate profile</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.copy.1">
+        <source>Duplicate profile ID %s</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.cut.0">
+        <source>Move profile</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.cut.1">
+        <source>Move profile ID %s</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.delete.0">
+        <source>Delete profile</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.delete.1">
+        <source>Delete profile ID %s</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.edit.0">
+        <source>Edit profile</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.edit.1">
+        <source>Edit profile ID %s</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.editheader.0">
+        <source>Edit category</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.editheader.1">
+        <source>Edit this category</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.new.0">
+        <source>New profile</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.new.1">
+        <source>Create a new profile</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.pasteafter.0">
+        <source>Paste at the beginning</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.pasteafter.1">
+        <source>Paste after question ID %s</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.pastenew.0">
+        <source>Create a new profile at the beginning</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.pastenew.1">
+        <source>Create a new profile after question ID %s</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.published.0">
+        <source>Published</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.published.1">
+        <source>The XING Banner will not be visible on your website until it is published.</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.show.0">
+        <source>Show profile</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.show.1">
+        <source>Show details of profile ID %s</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.toggle.0">
+        <source>Toggle visibility</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.toggle.1">
+        <source>Toggle the visibility of profil ID %s</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.xinglayout.0">
+        <source>XING Layout</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.xinglayout.1">
+        <source>Select the XING layout.</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.xingprofil.0">
+        <source>XING Profil</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.xingprofil.1">
+        <source>Please enter the XING profile name.</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.xingtarget.0">
+        <source>Internal link</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.xingtarget.1">
+        <source>If you choose this option, the generated XING-link opens in the same browser window.</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing.80">
+        
+        <source>ES Variant 1 ( 85x23)</source>
+      </trans-unit>
+      <trans-unit id="tl_xing.81">
+        
+        <source>ES Variant 2 (118x23)</source>
+      </trans-unit>
+      <trans-unit id="tl_xing.82">
+        
+        <source>ES Variant 3 (139x23)</source>
+      </trans-unit>
+      <trans-unit id="tl_xing.83">
+        
+        <source>ES Variant 4 (118x23)</source>
+      </trans-unit>
+      <trans-unit id="tl_xing.84">
+        
+        <source>ES Variant 5 ( 80x15) Text</source>
+      </trans-unit>
+      <trans-unit id="tl_xing.85">
+        
+        <source>ES Variant 6 (118x23)</source>
+      </trans-unit>
+      <trans-unit id="tl_xing.90">
+        
+        <source>IT Variant 1 (118x23)</source>
+      </trans-unit>
+      <trans-unit id="tl_xing.91">
+        
+        <source>IT Variant 2 (118x23)</source>
+      </trans-unit>
+      <trans-unit id="tl_xing.92">
+        
+        <source>IT Variant 3 (118x23)</source>
+      </trans-unit>
+      <trans-unit id="tl_xing.93">
+        
+        <source>IT Variant 4 (139x23)</source>
+      </trans-unit>
+      <trans-unit id="tl_xing.94">
+        
+        <source>IT Variant 5 (118x23)</source>
+      </trans-unit>
+      <trans-unit id="tl_xing.95">
+        
+        <source>IT Variant 6 ( 81x14) Text</source>
+      </trans-unit>
+      <trans-unit id="tl_xing.96">
+        
+        <source>IT Variant 7 (139x23)</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

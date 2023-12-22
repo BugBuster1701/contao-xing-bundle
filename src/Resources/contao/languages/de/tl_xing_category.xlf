@@ -1,0 +1,86 @@
+<?xml version="1.0" ?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="php" date="2016-03-26T19:02:29+01:00" original="tl_xing_category" source-language="en" target-language="de">
+    <body>
+      <trans-unit id="tl_xing_category.copy.0">
+        <source>Copy category</source>
+        <target>Kategorie duplizieren</target>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing_category.copy.1">
+        <source>Copy category ID %s</source>
+        <target>Kategorie ID %s duplizieren</target>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing_category.delete.0">
+        <source>Delete category</source>
+        <target>Kategorie löschen</target>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing_category.delete.1">
+        <source>Delete category ID %s</source>
+        <target>Kategorie ID %s löschen</target>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing_category.deleteConfirm">
+        <source>Deleting a category will also delete all its XING-Profiles! Do you really want to delete category ID %s?</source>
+        <target>Wenn Sie eine Kategorie löschen werde auch alle darin enthaltenen Profile gelöscht. Wollen Sie die Kategorie ID %s wirklich löschen?</target>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing_category.edit.0">
+        <source>Edit category</source>
+        <target>Kategorie bearbeiten</target>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing_category.edit.1">
+        <source>Edit category ID %s</source>
+        <target>Kategorie ID %s bearbeiten</target>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing_category.new.0">
+        <source>New category</source>
+        <target>Neue Kategorie</target>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing_category.new.1">
+        <source>Create a new category</source>
+        <target>Eine neue Kategorie anlegen</target>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing_category.show.0">
+        <source>Category details</source>
+        <target>Kategoriedetails</target>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing_category.show.1">
+        <source>Show details of category ID %s</source>
+        <target>Details der Kategorie ID %s anzeigen</target>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing_category.title.0">
+        <source>Title</source>
+        <target>Titel</target>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing_category.title.1">
+        <source>Please enter the title of the category.</source>
+        <target>Bitte geben Sie den Titel der Kategorie ein.</target>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing_category.title_legend">
+        <source>Titel of the XING category</source>
+        <target>Titel der XING Kategorie</target>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing_category.tstamp.0">
+        <source>Revision date</source>
+        <target>Änderungsdatum</target>
+        
+      </trans-unit>
+      <trans-unit id="tl_xing_category.tstamp.1">
+        <source>Date and time of latest revision</source>
+        <target>Datum und Uhrzeit der letzten Änderung</target>
+        
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

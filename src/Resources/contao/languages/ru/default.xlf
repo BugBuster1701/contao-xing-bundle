@@ -1,0 +1,10 @@
+<?xml version="1.0" ?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="php" date="2016-03-26T19:02:29+01:00" original="default" source-language="en" target-language="ru">
+    <body>
+      <trans-unit id="XingList.warning">
+        <source>ERROR: Contao Xing Bundle requires at least Contao 4.0</source>
+        
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

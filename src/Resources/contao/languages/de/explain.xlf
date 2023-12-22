@@ -1,0 +1,224 @@
+<?xml version="1.0" ?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="php" date="2018-05-12T01:04:11+02:00" original="explain" source-language="en" target-language="de">
+    <body>
+      <trans-unit id="XPL.xing_help_layout.0.0">
+        <source>XING-Layout</source>
+        <target>XING-Layout</target>
+        
+      </trans-unit>
+      <trans-unit id="XPL.xing_help_layout.0.1">
+        <source>The selection of graphics to be displayed.&lt;br&gt;Currently possible:&lt;br&gt;
+		&lt;pre&gt;DE Variant 1  ( 85x23) &lt;img src=&quot;/bundles/bugbusterxing/1_de_btn.gif&quot; width=&quot;85&quot; height=&quot;23&quot;    alt=&quot;XING&quot; title=&quot;mein XING Profil&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;DE Variant 2  (118x23) &lt;img src=&quot;/bundles/bugbusterxing/2_de_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot;   alt=&quot;XING&quot; title=&quot;mein XING Profil&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;DE Variant 3  (118x23) &lt;img src=&quot;/bundles/bugbusterxing/3_de_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot;   alt=&quot;XING&quot; title=&quot;mein XING Profil&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;DE Variant 4  (118x23) &lt;img src=&quot;/bundles/bugbusterxing/4_de_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot;   alt=&quot;XING&quot; title=&quot;mein XING Profil&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;DE Variant 5  (118x23) &lt;img src=&quot;/bundles/bugbusterxing/5_de_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot;   alt=&quot;XING&quot; title=&quot;mein XING Profil&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;DE Variant 6  (118x23) &lt;img src=&quot;/bundles/bugbusterxing/6_de_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot;   alt=&quot;XING&quot; title=&quot;mein XING Profil&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;DE Variant 7  (139x23) &lt;img src=&quot;/bundles/bugbusterxing/7_de_btn.gif&quot; width=&quot;139&quot; height=&quot;23&quot;   alt=&quot;XING&quot; title=&quot;mein XING Profil&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;DE Variant 8  (118x23) &lt;img src=&quot;/bundles/bugbusterxing/8_de_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot;   alt=&quot;XING&quot; title=&quot;mein XING Profil&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;DE Variant 9  ( 80x15) &lt;img src=&quot;/bundles/bugbusterxing/9_de_btn.gif&quot;  width=&quot;80&quot; height=&quot;15&quot;   alt=&quot;XING&quot; title=&quot;mein XING Profil&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;DE Variant 10 (118x23) &lt;img src=&quot;/bundles/bugbusterxing/16_de_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot;  alt=&quot;XING&quot; title=&quot;mein XING Profil&quot;&gt;&lt;/pre&gt;
+        &lt;br&gt;
+        &lt;pre&gt;EN Variant 1  ( 85x23) &lt;img src=&quot;/bundles/bugbusterxing/10_en_btn.gif&quot; width=&quot;85&quot; height=&quot;23&quot;   alt=&quot;XING&quot; title=&quot;my XING Profile&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;EN Variant 2  (118x23) &lt;img src=&quot;/bundles/bugbusterxing/11_en_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot;  alt=&quot;XING&quot; title=&quot;my XING Profile&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;EN Variant 3  ( 99x23) &lt;img src=&quot;/bundles/bugbusterxing/12_en_btn.gif&quot; width=&quot;99&quot; height=&quot;23&quot;   alt=&quot;XING&quot; title=&quot;my XING Profile&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;EN Variant 4  (118x23) &lt;img src=&quot;/bundles/bugbusterxing/13_en_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot;  alt=&quot;XING&quot; title=&quot;my XING Profile&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;EN Variant 5  ( 80x15) &lt;img src=&quot;/bundles/bugbusterxing/14_en_btn.gif&quot; width=&quot;80&quot; height=&quot;15&quot;   alt=&quot;XING&quot; title=&quot;my XING Profile&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;EN Variant 6  ( 99x23) &lt;img src=&quot;/bundles/bugbusterxing/15_en_btn.gif&quot; width=&quot;99&quot; height=&quot;23&quot;   alt=&quot;XING&quot; title=&quot;my XING Profile&quot;&gt;&lt;/pre&gt;
+        &lt;br&gt;
+        &lt;pre&gt;FR Variant 1  (118x23) &lt;img src=&quot;/bundles/bugbusterxing/40_fr_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot;  alt=&quot;XING&quot; title=&quot;Mon profil XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;FR Variant 2  (118x23) &lt;img src=&quot;/bundles/bugbusterxing/41_fr_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot;  alt=&quot;XING&quot; title=&quot;Mon profil XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;FR Variant 3  (118x23) &lt;img src=&quot;/bundles/bugbusterxing/42_fr_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot;  alt=&quot;XING&quot; title=&quot;Mon profil XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;FR Variant 4  (139x23) &lt;img src=&quot;/bundles/bugbusterxing/43_fr_btn.gif&quot; width=&quot;139&quot; height=&quot;23&quot;  alt=&quot;XING&quot; title=&quot;Mon profil XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;FR Variant 5  (118x23) &lt;img src=&quot;/bundles/bugbusterxing/44_fr_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot;  alt=&quot;XING&quot; title=&quot;Mon profil XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;FR Variant 6  ( 74x14) &lt;img src=&quot;/bundles/bugbusterxing/45_fr_btn.gif&quot; width=&quot;74&quot;  height=&quot;14&quot;  alt=&quot;XING&quot; title=&quot;Mon profil XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;FR Variant 7  (118x23) &lt;img src=&quot;/bundles/bugbusterxing/46_fr_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot;  alt=&quot;XING&quot; title=&quot;Mon profil XING&quot;&gt;&lt;/pre&gt;
+        &lt;br&gt;
+        &lt;pre&gt;PL Variant 1  ( 94x24) &lt;img src=&quot;/bundles/bugbusterxing/86_pl_btn.gif&quot; width=&quot;94&quot;  height=&quot;24&quot;  alt=&quot;XING&quot; title=&quot;Mój XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;PL Variant 2  (115x23) &lt;img src=&quot;/bundles/bugbusterxing/87_pl_btn.gif&quot; width=&quot;115&quot; height=&quot;23&quot;  alt=&quot;XING&quot; title=&quot;Mój XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;PL Variant 3  (100x23) &lt;img src=&quot;/bundles/bugbusterxing/88_pl_btn.gif&quot; width=&quot;100&quot; height=&quot;23&quot;  alt=&quot;XING&quot; title=&quot;Mój XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;PL Variant 4  (126x23) &lt;img src=&quot;/bundles/bugbusterxing/89_pl_btn.gif&quot; width=&quot;126&quot; height=&quot;23&quot;  alt=&quot;XING&quot; title=&quot;Mój XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;PL Variant 5  (167x23) &lt;img src=&quot;/bundles/bugbusterxing/90_pl_btn.gif&quot; width=&quot;167&quot; height=&quot;23&quot;  alt=&quot;XING&quot; title=&quot;Mój XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;PL Variant 6  (160x24) &lt;img src=&quot;/bundles/bugbusterxing/91_pl_btn.gif&quot; width=&quot;160&quot; height=&quot;24&quot;  alt=&quot;XING&quot; title=&quot;Mój XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;PL Variant 7  ( 74x14) &lt;img src=&quot;/bundles/bugbusterxing/92_pl_btn.gif&quot; width=&quot;74&quot;  height=&quot;14&quot;  alt=&quot;XING&quot; title=&quot;Mój XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;PL Variant 8  (130x24) &lt;img src=&quot;/bundles/bugbusterxing/93_pl_btn.gif&quot; width=&quot;130&quot; height=&quot;24&quot;  alt=&quot;XING&quot; title=&quot;Mój XING&quot;&gt;&lt;/pre&gt;
+        &lt;br&gt;                                                                                                                                             
+        &lt;pre&gt;SV Variant 1  (100x22) &lt;img src=&quot;/bundles/bugbusterxing/109_sv_btn.gif&quot; width=&quot;100&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Mitt XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;SV Variant 2  (119x23) &lt;img src=&quot;/bundles/bugbusterxing/110_sv_btn.gif&quot; width=&quot;119&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Mitt XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;SV Variant 3  (126x23) &lt;img src=&quot;/bundles/bugbusterxing/111_sv_btn.gif&quot; width=&quot;126&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Mitt XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;SV Variant 4  (126x23) &lt;img src=&quot;/bundles/bugbusterxing/112_sv_btn.gif&quot; width=&quot;126&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Mitt XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;SV Variant 5  (151x23) &lt;img src=&quot;/bundles/bugbusterxing/113_sv_btn.gif&quot; width=&quot;151&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Mitt XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;SV Variant 6  (133x24) &lt;img src=&quot;/bundles/bugbusterxing/114_sv_btn.gif&quot; width=&quot;133&quot; height=&quot;24&quot; alt=&quot;XING&quot; title=&quot;Mitt XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;SV Variant 7  ( 74x14) &lt;img src=&quot;/bundles/bugbusterxing/115_sv_btn.gif&quot; width=&quot;75&quot;  height=&quot;14&quot; alt=&quot;XING&quot; title=&quot;Mitt XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;SV Variant 8  (112x24) &lt;img src=&quot;/bundles/bugbusterxing/116_sv_btn.gif&quot; width=&quot;112&quot; height=&quot;24&quot; alt=&quot;XING&quot; title=&quot;Mitt XING&quot;&gt;&lt;/pre&gt;
+        &lt;br&gt;                                                                                                                                            
+        &lt;pre&gt;JP Variant 1  ( 93x23) &lt;img src=&quot;/bundles/bugbusterxing/62_ja_btn.gif&quot; width=&quot;93&quot;  height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;My XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;JP Variant 2  (149x23) &lt;img src=&quot;/bundles/bugbusterxing/63_ja_btn.gif&quot; width=&quot;149&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;My XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;JP Variant 3  (160x23) &lt;img src=&quot;/bundles/bugbusterxing/64_ja_btn.gif&quot; width=&quot;160&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;My XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;JP Variant 4  (115x23) &lt;img src=&quot;/bundles/bugbusterxing/65_ja_btn.gif&quot; width=&quot;115&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;My XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;JP Variant 5  (157x23) &lt;img src=&quot;/bundles/bugbusterxing/66_ja_btn.gif&quot; width=&quot;157&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;My XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;JP Variant 6  (130x23) &lt;img src=&quot;/bundles/bugbusterxing/67_ja_btn.gif&quot; width=&quot;130&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;My XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;JP Variant 7  (100x14) &lt;img src=&quot;/bundles/bugbusterxing/68_ja_btn.gif&quot; width=&quot;100&quot; height=&quot;14&quot; alt=&quot;XING&quot; title=&quot;My XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;JP Variant 8  (149x23) &lt;img src=&quot;/bundles/bugbusterxing/69_ja_btn.gif&quot; width=&quot;149&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;My XING&quot;&gt;&lt;/pre&gt;
+        &lt;br&gt;
+        &lt;pre&gt;PT Variant 1  (118x23) &lt;img src=&quot;/bundles/bugbusterxing/94_pt_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Meu XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;PT Variant 2  (118x23) &lt;img src=&quot;/bundles/bugbusterxing/95_pt_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Meu XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;PT Variant 3  (118x23) &lt;img src=&quot;/bundles/bugbusterxing/96_pt_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Meu XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;PT Variant 4  (139x23) &lt;img src=&quot;/bundles/bugbusterxing/97_pt_btn.gif&quot; width=&quot;139&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Meu XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;PT Variant 5  (118x23) &lt;img src=&quot;/bundles/bugbusterxing/98_pt_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Meu XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;PT Variant 6  ( 80x15) &lt;img src=&quot;/bundles/bugbusterxing/99_pt_btn.gif&quot; width=&quot;80&quot;  height=&quot;15&quot; alt=&quot;XING&quot; title=&quot;Meu XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;PT Variant 7  (118x23) &lt;img src=&quot;/bundles/bugbusterxing/100_pt_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Meu XING&quot;&gt;&lt;/pre&gt;
+        &lt;br&gt;
+        &lt;pre&gt;ES Variant 1  ( 85x23) &lt;img src=&quot;/bundles/bugbusterxing/17_es_btn.gif&quot; width=&quot;85&quot;  height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Mi perfil en XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;ES Variant 2  (118x23) &lt;img src=&quot;/bundles/bugbusterxing/18_es_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Mi perfil en XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;ES Variant 3  (139x23) &lt;img src=&quot;/bundles/bugbusterxing/19_es_btn.gif&quot; width=&quot;139&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Mi perfil en XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;ES Variant 4  (118x23) &lt;img src=&quot;/bundles/bugbusterxing/20_es_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Mi perfil en XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;ES Variant 5  ( 80x15) &lt;img src=&quot;/bundles/bugbusterxing/21_es_btn.gif&quot; width=&quot;80&quot;  height=&quot;15&quot; alt=&quot;XING&quot; title=&quot;Mi perfil en XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;ES Variant 6  (118x23) &lt;img src=&quot;/bundles/bugbusterxing/22_es_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Mi perfil en XING&quot;&gt;&lt;/pre&gt;
+        &lt;br&gt;
+        &lt;pre&gt;IT Variant 1  (118x23) &lt;img src=&quot;/bundles/bugbusterxing/55_it_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Io su XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;IT Variant 2  (118x23) &lt;img src=&quot;/bundles/bugbusterxing/56_it_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Io su XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;IT Variant 3  (118x23) &lt;img src=&quot;/bundles/bugbusterxing/57_it_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Io su XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;IT Variant 4  (139x23) &lt;img src=&quot;/bundles/bugbusterxing/58_it_btn.gif&quot; width=&quot;139&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Io su XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;IT Variant 5  (118x23) &lt;img src=&quot;/bundles/bugbusterxing/59_it_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Io su XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;IT Variant 6  ( 81x14) &lt;img src=&quot;/bundles/bugbusterxing/60_it_btn.gif&quot; width=&quot;81&quot;  height=&quot;14&quot; alt=&quot;XING&quot; title=&quot;Io su XING&quot;&gt;&lt;/pre&gt;
+        &lt;pre&gt;IT Variant 7  (139x23) &lt;img src=&quot;/bundles/bugbusterxing/61_it_btn.gif&quot; width=&quot;139&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Io su XING&quot;&gt;&lt;/pre&gt;
+        &lt;br&gt;
+        &lt;pre&gt;Company Button (98x23) &lt;img src=&quot;/bundles/bugbusterxing/cp_button.png&quot; width=&quot;98&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Company&quot;&gt;&lt;/pre&gt;</source>
+        <target>Auswahl der Grafik die angezeigt werden soll.&lt;br&gt;
+Derzeit möglich:&lt;br&gt;
+&lt;pre&gt;DE Variante 1 ( 85x23) &lt;img src=&quot;/bundles/bugbusterxing/1_de_btn.gif&quot; width=&quot;85&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;mein XING Profil&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;DE Variante 2 (118x23) &lt;img src=&quot;/bundles/bugbusterxing/2_de_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;mein XING Profil&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;DE Variante 3 (118x23) &lt;img src=&quot;/bundles/bugbusterxing/3_de_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;mein XING Profil&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;DE Variante 4 (118x23) &lt;img src=&quot;/bundles/bugbusterxing/4_de_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;mein XING Profil&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;DE Variante 5 (118x23) &lt;img src=&quot;/bundles/bugbusterxing/5_de_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;mein XING Profil&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;DE Variante 6 (118x23) &lt;img src=&quot;/bundles/bugbusterxing/6_de_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;mein XING Profil&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;DE Variante 7 (139x23) &lt;img src=&quot;/bundles/bugbusterxing/7_de_btn.gif&quot; width=&quot;139&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;mein XING Profil&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;DE Variante 8 (118x23) &lt;img src=&quot;/bundles/bugbusterxing/8_de_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;mein XING Profil&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;DE Variante 9 ( 80x15) &lt;img src=&quot;/bundles/bugbusterxing/9_de_btn.gif&quot; width=&quot;80&quot; height=&quot;15&quot; alt=&quot;XING&quot; title=&quot;mein XING Profil&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;DE Variante 10 (118x23) &lt;img src=&quot;/bundles/bugbusterxing/16_de_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;mein XING Profil&quot;&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;pre&gt;EN Variante 1 ( 85x23) &lt;img src=&quot;/bundles/bugbusterxing/10_en_btn.gif&quot; width=&quot;85&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;my XING Profile&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;EN Variante 2 (118x23) &lt;img src=&quot;/bundles/bugbusterxing/11_en_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;my XING Profile&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;EN Variante 3 ( 99x23) &lt;img src=&quot;/bundles/bugbusterxing/12_en_btn.gif&quot; width=&quot;99&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;my XING Profile&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;EN Variante 4 (118x23) &lt;img src=&quot;/bundles/bugbusterxing/13_en_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;my XING Profile&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;EN Variante 5 ( 80x15) &lt;img src=&quot;/bundles/bugbusterxing/14_en_btn.gif&quot; width=&quot;80&quot; height=&quot;15&quot; alt=&quot;XING&quot; title=&quot;my XING Profile&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;EN Variante 6 ( 99x23) &lt;img src=&quot;/bundles/bugbusterxing/15_en_btn.gif&quot; width=&quot;99&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;my XING Profile&quot;&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;pre&gt;FR Variante 1 (118x23) &lt;img src=&quot;/bundles/bugbusterxing/40_fr_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Mon profil XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;FR Variante 2 (118x23) &lt;img src=&quot;/bundles/bugbusterxing/41_fr_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Mon profil XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;FR Variante 3 (118x23) &lt;img src=&quot;/bundles/bugbusterxing/42_fr_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Mon profil XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;FR Variante 4 (139x23) &lt;img src=&quot;/bundles/bugbusterxing/43_fr_btn.gif&quot; width=&quot;139&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Mon profil XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;FR Variante 5 (118x23) &lt;img src=&quot;/bundles/bugbusterxing/44_fr_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Mon profil XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;FR Variante 6 ( 74x14) &lt;img src=&quot;/bundles/bugbusterxing/45_fr_btn.gif&quot; width=&quot;74&quot; height=&quot;14&quot; alt=&quot;XING&quot; title=&quot;Mon profil XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;FR Variante 7 (118x23) &lt;img src=&quot;/bundles/bugbusterxing/46_fr_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Mon profil XING&quot;&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;pre&gt;PL Variante 1 ( 94x24) &lt;img src=&quot;/bundles/bugbusterxing/86_pl_btn.gif&quot; width=&quot;94&quot; height=&quot;24&quot; alt=&quot;XING&quot; title=&quot;Mój XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;PL Variante 2 (115x23) &lt;img src=&quot;/bundles/bugbusterxing/87_pl_btn.gif&quot; width=&quot;115&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Mój XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;PL Variante 3 (100x23) &lt;img src=&quot;/bundles/bugbusterxing/88_pl_btn.gif&quot; width=&quot;100&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Mój XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;PL Variante 4 (126x23) &lt;img src=&quot;/bundles/bugbusterxing/89_pl_btn.gif&quot; width=&quot;126&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Mój XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;PL Variante 5 (167x23) &lt;img src=&quot;/bundles/bugbusterxing/90_pl_btn.gif&quot; width=&quot;167&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Mój XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;PL Variante 6 (160x24) &lt;img src=&quot;/bundles/bugbusterxing/91_pl_btn.gif&quot; width=&quot;160&quot; height=&quot;24&quot; alt=&quot;XING&quot; title=&quot;Mój XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;PL Variante 7 ( 74x14) &lt;img src=&quot;/bundles/bugbusterxing/92_pl_btn.gif&quot; width=&quot;74&quot; height=&quot;14&quot; alt=&quot;XING&quot; title=&quot;Mój XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;PL Variante 8 (130x24) &lt;img src=&quot;/bundles/bugbusterxing/93_pl_btn.gif&quot; width=&quot;130&quot; height=&quot;24&quot; alt=&quot;XING&quot; title=&quot;Mój XING&quot;&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;pre&gt;SV Variante 1 (100x22) &lt;img src=&quot;/bundles/bugbusterxing/109_sv_btn.gif&quot; width=&quot;100&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Mitt XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;SV Variante 2 (119x23) &lt;img src=&quot;/bundles/bugbusterxing/110_sv_btn.gif&quot; width=&quot;119&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Mitt XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;SV Variante 3 (126x23) &lt;img src=&quot;/bundles/bugbusterxing/111_sv_btn.gif&quot; width=&quot;126&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Mitt XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;SV Variante 4 (126x23) &lt;img src=&quot;/bundles/bugbusterxing/112_sv_btn.gif&quot; width=&quot;126&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Mitt XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;SV Variante 5 (151x23) &lt;img src=&quot;/bundles/bugbusterxing/113_sv_btn.gif&quot; width=&quot;151&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Mitt XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;SV Variante 6 (133x24) &lt;img src=&quot;/bundles/bugbusterxing/114_sv_btn.gif&quot; width=&quot;133&quot; height=&quot;24&quot; alt=&quot;XING&quot; title=&quot;Mitt XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;SV Variante 7 ( 74x14) &lt;img src=&quot;/bundles/bugbusterxing/115_sv_btn.gif&quot; width=&quot;75&quot; height=&quot;14&quot; alt=&quot;XING&quot; title=&quot;Mitt XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;SV Variante 8 (112x24) &lt;img src=&quot;/bundles/bugbusterxing/116_sv_btn.gif&quot; width=&quot;112&quot; height=&quot;24&quot; alt=&quot;XING&quot; title=&quot;Mitt XING&quot;&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;pre&gt;JP Variante 1 ( 93x23) &lt;img src=&quot;/bundles/bugbusterxing/62_ja_btn.gif&quot; width=&quot;93&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;My XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;JP Variante 2 (149x23) &lt;img src=&quot;/bundles/bugbusterxing/63_ja_btn.gif&quot; width=&quot;149&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;My XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;JP Variante 3 (160x23) &lt;img src=&quot;/bundles/bugbusterxing/64_ja_btn.gif&quot; width=&quot;160&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;My XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;JP Variante 4 (115x23) &lt;img src=&quot;/bundles/bugbusterxing/65_ja_btn.gif&quot; width=&quot;115&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;My XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;JP Variante 5 (157x23) &lt;img src=&quot;/bundles/bugbusterxing/66_ja_btn.gif&quot; width=&quot;157&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;My XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;JP Variante 6 (130x23) &lt;img src=&quot;/bundles/bugbusterxing/67_ja_btn.gif&quot; width=&quot;130&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;My XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;JP Variante 7 (100x14) &lt;img src=&quot;/bundles/bugbusterxing/68_ja_btn.gif&quot; width=&quot;100&quot; height=&quot;14&quot; alt=&quot;XING&quot; title=&quot;My XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;JP Variante 8 (149x23) &lt;img src=&quot;/bundles/bugbusterxing/69_ja_btn.gif&quot; width=&quot;149&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;My XING&quot;&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;pre&gt;PT Variante 1 (118x23) &lt;img src=&quot;/bundles/bugbusterxing/94_pt_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Meu XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;PT Variante 2 (118x23) &lt;img src=&quot;/bundles/bugbusterxing/95_pt_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Meu XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;PT Variante 3 (118x23) &lt;img src=&quot;/bundles/bugbusterxing/96_pt_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Meu XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;PT Variante 4 (139x23) &lt;img src=&quot;/bundles/bugbusterxing/97_pt_btn.gif&quot; width=&quot;139&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Meu XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;PT Variante 5 (118x23) &lt;img src=&quot;/bundles/bugbusterxing/98_pt_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Meu XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;PT Variante 6 ( 80x15) &lt;img src=&quot;/bundles/bugbusterxing/99_pt_btn.gif&quot; width=&quot;80&quot; height=&quot;15&quot; alt=&quot;XING&quot; title=&quot;Meu XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;PT Variante 7 (118x23) &lt;img src=&quot;/bundles/bugbusterxing/100_pt_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Meu XING&quot;&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;pre&gt;ES Variant 1 ( 85x23) &lt;img src=&quot;/bundles/bugbusterxing/17_es_btn.gif&quot; width=&quot;85&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Mi perfil en XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;ES Variant 2 (118x23) &lt;img src=&quot;/bundles/bugbusterxing/18_es_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Mi perfil en XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;ES Variant 3 (139x23) &lt;img src=&quot;/bundles/bugbusterxing/19_es_btn.gif&quot; width=&quot;139&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Mi perfil en XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;ES Variant 4 (118x23) &lt;img src=&quot;/bundles/bugbusterxing/20_es_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Mi perfil en XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;ES Variant 5 ( 80x15) &lt;img src=&quot;/bundles/bugbusterxing/21_es_btn.gif&quot; width=&quot;80&quot; height=&quot;15&quot; alt=&quot;XING&quot; title=&quot;Mi perfil en XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;ES Variant 6 (118x23) &lt;img src=&quot;/bundles/bugbusterxing/22_es_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Mi perfil en XING&quot;&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;pre&gt;IT Variant 1 (118x23) &lt;img src=&quot;/bundles/bugbusterxing/55_it_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Io su XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;IT Variant 2 (118x23) &lt;img src=&quot;/bundles/bugbusterxing/56_it_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Io su XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;IT Variant 3 (118x23) &lt;img src=&quot;/bundles/bugbusterxing/57_it_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Io su XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;IT Variant 4 (139x23) &lt;img src=&quot;/bundles/bugbusterxing/58_it_btn.gif&quot; width=&quot;139&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Io su XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;IT Variant 5 (118x23) &lt;img src=&quot;/bundles/bugbusterxing/59_it_btn.gif&quot; width=&quot;118&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Io su XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;IT Variant 6 ( 81x14) &lt;img src=&quot;/bundles/bugbusterxing/60_it_btn.gif&quot; width=&quot;81&quot; height=&quot;14&quot; alt=&quot;XING&quot; title=&quot;Io su XING&quot;&gt;&lt;/pre&gt;
+&lt;pre&gt;IT Variant 7 (139x23) &lt;img src=&quot;/bundles/bugbusterxing/61_it_btn.gif&quot; width=&quot;139&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Io su XING&quot;&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;pre&gt;Company Button (98x23) &lt;img src=&quot;/bundles/bugbusterxing/cp_button.png&quot; width=&quot;98&quot; height=&quot;23&quot; alt=&quot;XING&quot; title=&quot;Company&quot;&gt;&lt;/pre&gt;</target>
+        
+      </trans-unit>
+      <trans-unit id="XPL.xing_help_profile.0.0">
+        <source>XING-Profile (Private)</source>
+        <target>XING-Profil (Privat)</target>
+        
+      </trans-unit>
+      <trans-unit id="XPL.xing_help_profile.0.1">
+        <source>The last part of the profil URL, for URL:&lt;br&gt;&lt;i&gt;http://www.xing.com/profile/John_Doe&lt;/i&gt;&lt;br&gt;it must be entered: &lt;b&gt;John_Doe&lt;/b&gt;&lt;br&gt;</source>
+        <target>Der letzte Teil der Profil URL,
+bei der URL:&lt;br&gt;&lt;i&gt;http://www.xing.com/profile/Max_Mustermann&lt;/i&gt;&lt;br&gt;
+muss eingegeben werden: &lt;b&gt;Max_Mustermann&lt;/b&gt;&lt;br&gt;</target>
+        
+      </trans-unit>
+      <trans-unit id="XPL.xing_help_profile.1.0">
+        <source>XING-Profile (Company)</source>
+        <target>XING-Profil (Firma)</target>
+        
+      </trans-unit>
+      <trans-unit id="XPL.xing_help_profile.1.1">
+        <source>For Company Profiles, the last part of the profil URL,&lt;br&gt;for URL:&lt;br&gt;&lt;i&gt;https://www.xing.com/companies/examplecompany&lt;/i&gt;&lt;br&gt;it must be entered: &lt;b&gt;examplecompany&lt;/b&gt;&lt;br&gt;A special Company button is selectable at the end of the list.</source>
+        <target>Beim Unternehmensprofil den letzten Teil der Profil URL,&lt;br&gt;
+bei der URL:&lt;br&gt;&lt;i&gt;https://www.xing.com/companies/mustercompany&lt;/i&gt;&lt;br&gt;
+muss eingegeben werden: &lt;b&gt;mustercompany&lt;/b&gt;&lt;br&gt;
+Ein spezieller Company Button ist auswählbar am Ende der Liste.</target>
+        
+      </trans-unit>
+      <trans-unit id="XPL.xing_help_template.0.0">
+        <source>XING (Private)&lt;ul&gt;</source>
+        <target>XING (Privat)&lt;ul&gt;</target>
+        
+      </trans-unit>
+      <trans-unit id="XPL.xing_help_template.0.1">
+        <source>&lt;li&gt;mod_xing_list - it shows only the linked graphic&lt;/li&gt;
+		&lt;li&gt;mod_xing_list_profile - it shows the linked graphic, including the profile name&lt;/li&gt;
+		&lt;li&gt;mod_xing_list_team - as mod_xing_list_profile, for teams&lt;/li&gt;
+		&lt;/ul&gt;</source>
+        <target>&lt;li&gt;mod_xing_list - es wird nur die verlinkte Grafik gezeigt&lt;/li&gt;
+		&lt;li&gt;mod_xing_list_profile - es wird die verlinkte Grafik gezeigt, darunter der Profil Name&lt;/li&gt;
+		&lt;li&gt;mod_xing_list_team - wie bei mod_xing_list_profile, für Teams&lt;/li&gt;
+		&lt;/ul&gt;</target>
+        
+      </trans-unit>
+      <trans-unit id="XPL.xing_help_template.1.0">
+        <source>XING (Company)&lt;ul&gt;</source>
+        <target>XING (Firma)&lt;ul&gt;</target>
+        
+      </trans-unit>
+      <trans-unit id="XPL.xing_help_template.1.1">
+        <source>&lt;li&gt;mod_xing_list_company - for company profile&lt;/li&gt;
+		&lt;/ul&gt;</source>
+        <target>&lt;li&gt;mod_xing_list_company - Für Firmenprofil&lt;/li&gt;
+		&lt;/ul&gt;</target>
+        
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

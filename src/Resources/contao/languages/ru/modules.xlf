@@ -1,0 +1,22 @@
+<?xml version="1.0" ?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="php" date="2016-03-26T19:02:29+01:00" original="modules" source-language="en" target-language="ru">
+    <body>
+      <trans-unit id="FMD.xinglist.0">
+        <source>XING list</source>
+        
+      </trans-unit>
+      <trans-unit id="FMD.xinglist.1">
+        <source>With this module you can list XING-Banners in the front end.</source>
+        
+      </trans-unit>
+      <trans-unit id="MOD.xing.0">
+        <source>XING</source>
+        
+      </trans-unit>
+      <trans-unit id="MOD.xing.1">
+        <source>This module allows you to manage XING-Banners.</source>
+        
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
