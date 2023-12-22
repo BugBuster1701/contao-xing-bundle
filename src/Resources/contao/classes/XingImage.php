@@ -35,7 +35,7 @@ class XingImage
 	    $arrXingImageDefinitions= array();
 	    $xingSrcProfile = '//www.xing.com/img/buttons/';
 	    $xingSrcCompany = '//www.xing.com/img/xing/xe/corporate_pages/';
-	    $xingSrcLocal   = 'bundles/bugbusterxing/';
+	    $xingSrcLocal   = '/bundles/bugbusterxing/';
 
 		$rootDir = \Contao\System::getContainer()->getParameter('kernel.project_dir');
 	    if (file_exists($rootDir . "/vendor/bugbuster/contao-xing-bundle/src/Resources/contao/config/xing_image_definitions.php"))
