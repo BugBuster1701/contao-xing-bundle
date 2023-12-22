@@ -56,9 +56,6 @@ class ModuleXingList extends \Contao\Module
 	 */
 	const XINGLIST_VERSION = '1.3.0';
 
-	const LINK_BLUR = ' onclick="this.blur();"';
-	const LINK_NEW_WINDOW = ' onclick="window.open(this.href); return false;"';
-
 	/**
 	 * Display a wildcard in the back end
 	 * @return string
@@ -74,8 +71,9 @@ class ModuleXingList extends \Contao\Module
 			$objTemplate->title = $this->headline;
             $objTemplate->id = $this->id;
             $objTemplate->link = $this->name;
-            // Code für Versionen ab 3.0.0
-            $objTemplate->href = 'contao/main.php?do=themes&amp;table=tl_module&amp;act=edit&amp;id=' . $this->id;
+			$objTemplate->href = \Contao\StringUtil::specialcharsUrl(System::getContainer()->get('router')->generate('contao_backend', array('do'=>'themes', 'table'=>'tl_module', 'act'=>'edit', 'id'=>$this->id)));
+
+
 
 			return $objTemplate->parse();
 		}
@@ -97,12 +95,21 @@ class ModuleXingList extends \Contao\Module
 	protected function compile()
 	{
 		$hasBackendUser = System::getContainer()->get('contao.security.token_checker')->hasBackendUser();
-
-		$objXing = $this->Database->prepare("SELECT tl_xing.id AS id, xingprofil, xinglayout, xingtarget, title"
+		if ($hasBackendUser) {
+			$objXing = $this->Database->prepare("SELECT tl_xing.id AS id, xingprofil, xinglayout, xingtarget, title"
+												." FROM tl_xing LEFT JOIN tl_xing_category ON (tl_xing_category.id=tl_xing.pid)"
+												." WHERE pid IN(" . implode(',', $this->xing_category) . ")"
+												." ORDER BY title, sorting")
+										->execute();
+		}
+		else {		
+			$objXing = $this->Database->prepare("SELECT tl_xing.id AS id, xingprofil, xinglayout, xingtarget, title"
 		                                  ." FROM tl_xing LEFT JOIN tl_xing_category ON (tl_xing_category.id=tl_xing.pid)"
-		                                  ." WHERE pid IN(" . implode(',', $this->xing_category) . ")" . (!$hasBackendUser ? " AND published=?" : "")
+		                                  ." WHERE pid IN(" . implode(',', $this->xing_category) . ") AND published=?"
 		                                  ." ORDER BY title, sorting")
-								  ->execute(1);
+										->execute(1);
+		}
+								  
 		if ($objXing->numRows < 1)
 		{
 			//mod_xing_empty
@@ -128,25 +135,13 @@ class ModuleXingList extends \Contao\Module
     			$this->xing_images = preg_replace('/title="[^"]*"/', 'title="Company"', $this->xing_images);
     		}
 
-			if ($GLOBALS['objPage']->outputFormat == 'html5')
-			{
-				// $this->xing_images = \Contao\StringUtil::toHtml5($this->xing_images);
-				$arrXing[] = array
-				(
-	                'xingprofil' => trim($objXing->xingprofil),
-					'xinglayout' => $this->xing_images,
-					'xingtarget' => ($objXing->xingtarget == '1') ? '' : ' target="_blank"'
-				);
-			}
-			else
-			{
-				$arrXing[] = array
-				(
-	                'xingprofil' => trim($objXing->xingprofil),
-					'xinglayout' => $this->xing_images,
-					'xingtarget' => ($objXing->xingtarget == '1') ? $this->LINK_BLUR : $this->LINK_NEW_WINDOW
-				);
-			}
+			// $this->xing_images = \Contao\StringUtil::toHtml5($this->xing_images);
+			$arrXing[] = array
+			(
+				'xingprofil' => trim($objXing->xingprofil),
+				'xinglayout' => $this->xing_images,
+				'xingtarget' => ($objXing->xingtarget == '1') ? '' : ' target="_blank"'
+			);
 		} // while
 		if (($this->xing_template != $this->strTemplate) && ($this->xing_template))
 		{
