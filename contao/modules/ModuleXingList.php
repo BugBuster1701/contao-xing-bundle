@@ -28,8 +28,6 @@ use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Class ModuleXingList
- *
- * @copyright  Glen Langer 2008..2018
  */
 class ModuleXingList extends Module
 {
