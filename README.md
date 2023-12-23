@@ -1,4 +1,4 @@
-# Contao 4 XING Bundle
+# Contao 5 XING Bundle
 
 
 [![Latest Stable Version](https://poser.pugx.org/bugbuster/contao-xing-bundle/v/stable.svg)](https://packagist.org/packages/bugbuster/contao-xing-bundle) [![Total Downloads](https://poser.pugx.org/bugbuster/contao-xing-bundle/downloads.svg)](https://packagist.org/packages/bugbuster/contao-xing-bundle) [![Latest Unstable Version](https://poser.pugx.org/bugbuster/contao-xing-bundle/v/unstable.svg)](https://packagist.org/packages/bugbuster/contao-xing-bundle) [![License](https://poser.pugx.org/bugbuster/contao-xing-bundle/license.svg)](https://packagist.org/packages/bugbuster/contao-xing-bundle)
