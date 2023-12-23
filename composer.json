@@ -35,20 +35,17 @@
 		"psr-4": {
 			"BugBuster\\XingBundle\\": "src/"
 		},
-        "classmap": [
-            "src/Resources/contao/"
+		"classmap": [
+			"contao/"
 		],
 		"exclude-from-classmap": [
-            "src/Resources/contao/config/",
-            "src/Resources/contao/dca/",
-            "src/Resources/contao/languages/",
-            "src/Resources/contao/templates/"
+			"contao/config/",
+			"contao/dca/",
+			"contao/languages/",
+			"contao/templates/"
 		]
   	},
 	"extra": {
-		"branch-alias": {
-			"dev-develop": "1.4.x-dev"
-		},
 		"contao-manager-plugin": "BugBuster\\XingBundle\\ContaoManager\\Plugin"
 	},
 	"config": {
@@ -69,8 +66,8 @@
             "@ecs-template"
         ],
         "ecs": "@php tools/ecs/vendor/bin/ecs check src/ tests/ --config tools/ecs/config/default.php --fix --ansi",
-        "ecs-legacy": "@php tools/ecs/vendor/bin/ecs check src/Resources/contao/ --config tools/ecs/config/legacy.php --fix --ansi",
-        "ecs-template": "@php tools/ecs/vendor/bin/ecs check src/Resources/contao/templates --config tools/ecs/config/template.php --fix --ansi",
+        "ecs-legacy": "@php tools/ecs/vendor/bin/ecs check contao/ --config tools/ecs/config/legacy.php --fix --ansi",
+        "ecs-template": "@php tools/ecs/vendor/bin/ecs check contao/templates --config tools/ecs/config/template.php --fix --ansi",
         "unit-tests": "@php vendor/bin/phpunit --testdox --colors=always"
     }
 }

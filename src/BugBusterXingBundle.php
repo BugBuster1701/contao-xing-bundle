@@ -17,11 +17,16 @@ declare(strict_types=1);
 
 namespace BugBuster\XingBundle;
 
-use Symfony\Component\HttpKernel\Bundle\Bundle;
+//use Symfony\Component\HttpKernel\Bundle\Bundle;
+use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
 
 /**
  * Configures the Contao xing bundle.
  */
-class BugBusterXingBundle extends Bundle
+class BugBusterXingBundle extends AbstractBundle
 {
+    // public function getPath(): string
+    // {
+    //     return \dirname(__DIR__);
+    // }
 }

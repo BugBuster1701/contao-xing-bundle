@@ -21,8 +21,6 @@ use Contao\Backend;
 
 /**
  * DCA Helper Class DcaModuleXing
- *
- * @copyright  Glen Langer 2008..2019 <http://contao.ninja>
  */
 class DcaModuleXing extends Backend
 {

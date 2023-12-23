@@ -41,9 +41,9 @@ class XingImage
 		$xingSrcLocal   = '/bundles/bugbusterxing/';
 
 		$rootDir = System::getContainer()->getParameter('kernel.project_dir');
-		if (file_exists($rootDir . "/vendor/bugbuster/contao-xing-bundle/src/Resources/contao/config/xing_image_definitions.php"))
+		if (file_exists($rootDir . "/vendor/bugbuster/contao-xing-bundle/contao/config/xing_image_definitions.php"))
 		{
-			include $rootDir . "/vendor/bugbuster/contao-xing-bundle/src/Resources/contao/config/xing_image_definitions.php";
+			include $rootDir . "/vendor/bugbuster/contao-xing-bundle/contao/config/xing_image_definitions.php";
 		}
 
 		if (isset($arrXingImageDefinitions[$xinglayout]))

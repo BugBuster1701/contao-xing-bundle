@@ -25,8 +25,6 @@ use Contao\System;
 
 /**
  * DCA Helper Class DcaXing
- *
- * @copyright  Glen Langer 2008..2018 <http://contao.ninja>
  */
 class DcaXing extends Backend
 {

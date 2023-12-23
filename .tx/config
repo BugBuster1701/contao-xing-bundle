@@ -2,8 +2,8 @@
 host = https://app.transifex.com
 
 [o:bugbuster:p:contao-xing-bundle:r:master-default]
-file_filter            = src/Resources/contao/languages/<lang>/default.xlf
-source_file            = src/Resources/contao/languages/en/default.xlf
+file_filter            = contao/languages/<lang>/default.xlf
+source_file            = contao/languages/en/default.xlf
 source_lang            = en
 type                   = XLIFF
 minimum_perc           = 0
@@ -12,8 +12,8 @@ replace_edited_strings = false
 keep_translations      = false
 
 [o:bugbuster:p:contao-xing-bundle:r:master-explain]
-file_filter            = src/Resources/contao/languages/<lang>/explain.xlf
-source_file            = src/Resources/contao/languages/en/explain.xlf
+file_filter            = contao/languages/<lang>/explain.xlf
+source_file            = contao/languages/en/explain.xlf
 source_lang            = en
 type                   = XLIFF
 minimum_perc           = 0
@@ -22,8 +22,8 @@ replace_edited_strings = false
 keep_translations      = false
 
 [o:bugbuster:p:contao-xing-bundle:r:master-modules]
-file_filter            = src/Resources/contao/languages/<lang>/modules.xlf
-source_file            = src/Resources/contao/languages/en/modules.xlf
+file_filter            = contao/languages/<lang>/modules.xlf
+source_file            = contao/languages/en/modules.xlf
 source_lang            = en
 type                   = XLIFF
 minimum_perc           = 0
@@ -32,8 +32,8 @@ replace_edited_strings = false
 keep_translations      = false
 
 [o:bugbuster:p:contao-xing-bundle:r:master-tl_module]
-file_filter            = src/Resources/contao/languages/<lang>/tl_module.xlf
-source_file            = src/Resources/contao/languages/en/tl_module.xlf
+file_filter            = contao/languages/<lang>/tl_module.xlf
+source_file            = contao/languages/en/tl_module.xlf
 source_lang            = en
 type                   = XLIFF
 minimum_perc           = 0
@@ -42,8 +42,8 @@ replace_edited_strings = false
 keep_translations      = false
 
 [o:bugbuster:p:contao-xing-bundle:r:master-tl_xing]
-file_filter            = src/Resources/contao/languages/<lang>/tl_xing.xlf
-source_file            = src/Resources/contao/languages/en/tl_xing.xlf
+file_filter            = contao/languages/<lang>/tl_xing.xlf
+source_file            = contao/languages/en/tl_xing.xlf
 source_lang            = en
 type                   = XLIFF
 minimum_perc           = 0
@@ -52,8 +52,8 @@ replace_edited_strings = false
 keep_translations      = false
 
 [o:bugbuster:p:contao-xing-bundle:r:master-tl_xing_category]
-file_filter            = src/Resources/contao/languages/<lang>/tl_xing_category.xlf
-source_file            = src/Resources/contao/languages/en/tl_xing_category.xlf
+file_filter            = contao/languages/<lang>/tl_xing_category.xlf
+source_file            = contao/languages/en/tl_xing_category.xlf
 source_lang            = en
 type                   = XLIFF
 minimum_perc           = 0
