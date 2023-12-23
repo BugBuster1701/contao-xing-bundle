@@ -1,0 +1,46 @@
+<?xml version="1.0" ?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="php" date="2018-05-11T22:09:09+02:00" original="tl_module" source-language="en" target-language="de">
+    <body>
+      <trans-unit id="tl_module.xing_categories.0">
+        <source>XING Category</source>
+        <target>XING Kategorie</target>
+        
+      </trans-unit>
+      <trans-unit id="tl_module.xing_categories.1">
+        <source>Please select the XING-Category you want to include.</source>
+        <target>Bitte w&amp;auml;hlen Sie die XING-Kategorie für das Modul.</target>
+        
+      </trans-unit>
+      <trans-unit id="tl_module.xing_template.0">
+        <source>XING Template</source>
+        <target>XING Vorlage</target>
+        
+      </trans-unit>
+      <trans-unit id="tl_module.xing_template.1">
+        <source>Please choose the XING-Template. XING-Template files start with &lt;em&gt;mod_xing_list&lt;/em&gt;.</source>
+        <target>Bitte w&amp;auml;hlen Sie ein XING-Layout. Sie k&amp;ouml;nnen eigene Layouts im Ordner &lt;em&gt;templates&lt;/em&gt; speichern. Vorlagen m&amp;uuml;ssen mit &lt;em&gt;mod_xing_list&lt;/em&gt; beginnen und die Dateiendung &lt;em&gt;.xhtml&lt;/em&gt; / &lt;em&gt;.html5&lt;/em&gt; haben.</target>
+        
+      </trans-unit>
+      <trans-unit id="tl_module.xing_source.0">
+        
+        <source>Button source</source>
+        <target>Button Quelle</target>
+      </trans-unit>
+      <trans-unit id="tl_module.xing_source.1">
+        
+        <source>Here you can select from where to load the XING buttons.</source>
+        <target>Hier können Sie auswählen, von wo die XING Buttons geladen werden.</target>
+      </trans-unit>
+      <trans-unit id="tl_module.xing_local">
+        
+        <source>Local file</source>
+        <target>Lokale Datei</target>
+      </trans-unit>
+      <trans-unit id="tl_module.xing_server">
+        
+        <source>www.xing.com</source>
+        <target>www.xing.com</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -3,22 +3,25 @@
 declare(strict_types=1);
 
 /*
- * This file is part of a BugBuster Contao Bundle
+ * This file is part of a BugBuster Contao Bundle.
  *
- * @copyright  Glen Langer 2021 <http://contao.ninja>
+ * @copyright  Glen Langer 2023 <http://contao.ninja>
  * @author     Glen Langer (BugBuster)
- * @package    Xing
+ * @package    Contao Xing Bundle
+ * @link       https://github.com/BugBuster1701/contao-xing-bundle
+ *
  * @license    LGPL-3.0-or-later
- * @see        https://github.com/BugBuster1701/contao-xing-bundle
+ * For the full copyright and license information,
+ * please view the LICENSE file that was distributed with this source code.
  */
 
 namespace BugBuster\XingBundle;
 
-use Symfony\Component\HttpKernel\Bundle\Bundle;
+use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
 
 /**
  * Configures the Contao xing bundle.
  */
-class BugBusterXingBundle extends Bundle
+class BugBusterXingBundle extends AbstractBundle
 {
 }

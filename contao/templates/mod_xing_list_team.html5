@@ -1,0 +1,16 @@
+
+<!-- indexer::stop -->
+<section class="<?= $this->class; ?> block"<?= $this->cssID; ?><?php if ($this->style): ?> style="<?= $this->style; ?>"<?php endif; ?>>
+<?php if ($this->headline): ?>
+<<?= $this->hl; ?>><?= $this->headline; ?></<?= $this->hl; ?>>
+<?php endif; ?>
+
+<div class="xing_category"><?= $this->category; ?></div>
+<?php foreach ($this->xing as $xing): ?>
+<div class="xing_image">
+    <a href="//www.xing.com/profile/<?= $xing['xingprofil']; ?>" <?= $xing['xingtarget']; ?>><?= $xing['xinglayout']; ?></a>
+</div>
+<div class="xing_profile"><?= strtr($xing['xingprofil'], '_', ' '); ?></div>
+<?php endforeach; ?>
+</section>
+<!-- indexer::continue -->

@@ -3,7 +3,6 @@
 .buildpath
 .project
 .phpunit.result.cache
-# Transifex
-/.tx/
 vendor/
 composer.lock
+tx-umbau.md

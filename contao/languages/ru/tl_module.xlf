@@ -1,0 +1,38 @@
+<?xml version="1.0" ?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="php" date="2018-05-11T22:09:09+02:00" original="tl_module" source-language="en" target-language="ru">
+    <body>
+      <trans-unit id="tl_module.xing_categories.0">
+        <source>XING Category</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_module.xing_categories.1">
+        <source>Please select the XING-Category you want to include.</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_module.xing_template.0">
+        <source>XING Template</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_module.xing_template.1">
+        <source>Please choose the XING-Template. XING-Template files start with &lt;em&gt;mod_xing_list&lt;/em&gt;.</source>
+        
+      </trans-unit>
+      <trans-unit id="tl_module.xing_source.0">
+        
+        <source>Button source</source>
+      </trans-unit>
+      <trans-unit id="tl_module.xing_source.1">
+        
+        <source>Here you can select from where to load the XING buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_module.xing_local">
+        
+        <source>Local file</source>
+      </trans-unit>
+      <trans-unit id="tl_module.xing_server">
+        
+        <source>www.xing.com</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
