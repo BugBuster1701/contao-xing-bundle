@@ -1,4 +1,4 @@
-# Installation of Contao 4 XING Bundle
+# Installation of Contao 5 XING Bundle
 
 There are two types of installation.
 
@@ -10,14 +10,12 @@ There are two types of installation.
 
 * search for package: `bugbuster/contao-xing-bundle`
 * install the package
-* Click on "Install Tool"
-* Login and update the database
+* Update the database
 
 
 ## Installation via command line
 
-Installation in a Composer-based Contao 4.4+ Managed-Edition:
+Installation in a Composer-based Contao 5.2+ Managed-Edition:
 
 * `composer require "bugbuster/contao-xing-bundle"`
-* Call http://yourdomain/contao/install
-* Login and update the database
+* `php bin/console contao:migrate`
