@@ -15,7 +15,7 @@
 	"support":{
 		"issues":"https://github.com/BugBuster1701/contao-xing-bundle/issues",
 		"source":"https://github.com/BugBuster1701/contao-xing-bundle",
-		"wiki":"http://de.contaowiki.org/Xing",
+		"docs":"https://docs.contao.ninja/de/xing.html",
 		"forum":"https://community.contao.org/de/forumdisplay.php?119"
 	},
 	"require":{

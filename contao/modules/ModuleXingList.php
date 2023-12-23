@@ -52,7 +52,7 @@ class ModuleXingList extends Module
 	/**
 	 * Current version of the class.
 	 */
-	const XINGLIST_VERSION = '1.3.1';
+	const XINGLIST_VERSION = '1.3.2';
 
 	/**
 	 * Display a wildcard in the back end

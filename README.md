@@ -19,15 +19,15 @@ Installationsanleitung (DE): [INSTALLATION_DE.md](INSTALLATION_DE.md)
 
 ## User guide
 
-* English: http://en.contaowiki.org/Xing
-* German: http://de.contaowiki.org/Xing
+* English: https://docs.contao.ninja/en/xing.html
+* German: https://docs.contao.ninja/de/xing.html
 
 
 ## For Translators
 
 Translations are managed using Transifex. To create a new translation or to help to maintain an existing one, please register at transifex.com.
 
-Project Link: [https://www.transifex.com/projects/p/contao-xing-bundle/](https://www.transifex.com/projects/p/contao-xing-bundle/)
+Project Link: [https://www.transifex.com/bugbuster/contao-xing-bundle/](https://www.transifex.com/bugbuster/contao-xing-bundle/)
 
 Howto: [http://docs.transifex.com/faq/#translating](http://docs.transifex.com/faq/#translating)
 
