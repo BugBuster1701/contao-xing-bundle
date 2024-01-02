@@ -147,7 +147,8 @@ $GLOBALS['TL_DCA']['tl_xing'] = array
 			'flag'                    => DataContainer::SORT_INITIAL_LETTER_DESC,
 			'inputType'               => 'checkbox',
 			'sql'                     => "char(1) NOT NULL default ''",
-			'eval'                    => array('doNotCopy'=>true)
+			'eval'                    => array('doNotCopy'=>true),
+			'toggle'                  => true
 		)
 	)
 );
