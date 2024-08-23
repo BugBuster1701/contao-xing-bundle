@@ -3,7 +3,7 @@
 /*
  * This file is part of a BugBuster Contao Bundle.
  *
- * @copyright  Glen Langer 2023 <http://contao.ninja>
+ * @copyright  Glen Langer 2024 <http://contao.ninja>
  * @author     Glen Langer (BugBuster)
  * @package    Contao Xing Bundle
  * @link       https://github.com/BugBuster1701/contao-xing-bundle
@@ -52,7 +52,7 @@ class ModuleXingList extends Module
 	/**
 	 * Current version of the class.
 	 */
-	const XINGLIST_VERSION = '1.3.3';
+	const XINGLIST_VERSION = '1.4.0';
 
 	/**
 	 * Display a wildcard in the back end
