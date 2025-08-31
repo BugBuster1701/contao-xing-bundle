@@ -19,6 +19,12 @@ use Doctrine\DBAL\Connection;
 class XingListController extends AbstractContentElementController
 {
     /**
+	 * Template
+	 * @var string
+	 */
+	protected $xing_template = 'xing_list';
+
+    /**
 	 * Xing Image Link
 	 * @var string
 	 */
@@ -50,6 +56,10 @@ class XingListController extends AbstractContentElementController
         dump($model);
         
         $this->xing_category = StringUtil::deserialize($model->xing_categories, true);
+        if ($model->customTpl != '')
+        {
+            $this->xing_template = $model->customTpl;
+        }
 
         if ($this->tokenChecker->hasBackendUser())
         {
