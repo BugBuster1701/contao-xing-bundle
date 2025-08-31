@@ -2,7 +2,7 @@
   <file datatype="php" date="2016-03-26T19:02:29+01:00" original="default" source-language="en" target-language="ru">
     <body>
       <trans-unit id="XingList.warning">
-        <source>ERROR: Contao Xing Bundle requires at least Contao 4.0</source>
+        <source>ERROR: Contao Xing Bundle requires at least Contao 5.2</source>
         
       </trans-unit>
     </body>

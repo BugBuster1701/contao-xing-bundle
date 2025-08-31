@@ -24,21 +24,25 @@
       <trans-unit id="tl_module.xing_source.0">
         
         <source>Button source</source>
+        
         <target>Button Quelle</target>
       </trans-unit>
       <trans-unit id="tl_module.xing_source.1">
         
         <source>Here you can select from where to load the XING buttons.</source>
+        
         <target>Hier können Sie auswählen, von wo die XING Buttons geladen werden.</target>
       </trans-unit>
       <trans-unit id="tl_module.xing_local">
         
         <source>Local file</source>
+        
         <target>Lokale Datei</target>
       </trans-unit>
       <trans-unit id="tl_module.xing_server">
         
         <source>www.xing.com</source>
+        
         <target>www.xing.com</target>
       </trans-unit>
     </body>

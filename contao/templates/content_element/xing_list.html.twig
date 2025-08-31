@@ -1,0 +1,12 @@
+{% extends "@Contao/content_element/_base.html.twig" %}
+
+{% block content %}
+    {% if as_editor_view %}
+            <span class="xing">{{ wildcard }}</span>
+    {% else %}
+        <p>Put your content here.</p>
+        <div class="xing_image">
+            <a href="//www.xing.com/profile/<?= $xing['xingprofil']; ?>" <?= $xing['xingtarget']; ?>><?= $xing['xinglayout']; ?></a>
+        </div>
+    {% endif %}
+{% endblock %}

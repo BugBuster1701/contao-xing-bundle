@@ -419,66 +419,79 @@
       <trans-unit id="tl_xing.80">
         
         <source>ES Variant 1 ( 85x23)</source>
+        
         <target>ES Variante 1 ( 85x23)</target>
       </trans-unit>
       <trans-unit id="tl_xing.81">
         
         <source>ES Variant 2 (118x23)</source>
+        
         <target>ES Variante 2 (118x23)</target>
       </trans-unit>
       <trans-unit id="tl_xing.82">
         
         <source>ES Variant 3 (139x23)</source>
+        
         <target>ES Variante 3 (139x23)</target>
       </trans-unit>
       <trans-unit id="tl_xing.83">
         
         <source>ES Variant 4 (118x23)</source>
+        
         <target>ES Variante 4 (118x23)</target>
       </trans-unit>
       <trans-unit id="tl_xing.84">
         
         <source>ES Variant 5 ( 80x15) Text</source>
+        
         <target>ES Variante 5 ( 80x15) Text</target>
       </trans-unit>
       <trans-unit id="tl_xing.85">
         
         <source>ES Variant 6 (118x23)</source>
+        
         <target>ES Variante 6 (118x23)</target>
       </trans-unit>
       <trans-unit id="tl_xing.90">
         
         <source>IT Variant 1 (118x23)</source>
+        
         <target>IT Variante 1 (118x23)</target>
       </trans-unit>
       <trans-unit id="tl_xing.91">
         
         <source>IT Variant 2 (118x23)</source>
+        
         <target>IT Variante 2 (118x23)</target>
       </trans-unit>
       <trans-unit id="tl_xing.92">
         
         <source>IT Variant 3 (118x23)</source>
+        
         <target>IT Variante 3 (118x23)</target>
       </trans-unit>
       <trans-unit id="tl_xing.93">
         
         <source>IT Variant 4 (139x23)</source>
+        
         <target>IT Variante 4 (139x23)</target>
       </trans-unit>
       <trans-unit id="tl_xing.94">
         
         <source>IT Variant 5 (118x23)</source>
+        
         <target>IT Variante 5 (118x23)</target>
       </trans-unit>
       <trans-unit id="tl_xing.95">
         
         <source>IT Variant 6 ( 81x14) Text</source>
+        
         <target>IT Variante 6 ( 81x14) Text</target>
       </trans-unit>
       <trans-unit id="tl_xing.96">
         
         <source>IT Variant 7 (139x23)</source>
+        
         <target>IT Variante 7 (139x23)</target>
       </trans-unit>
     </body>

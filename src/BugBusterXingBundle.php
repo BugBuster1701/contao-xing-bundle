@@ -18,10 +18,20 @@ declare(strict_types=1);
 namespace BugBuster\XingBundle;
 
 use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
 
 /**
  * Configures the Contao xing bundle.
  */
 class BugBusterXingBundle extends AbstractBundle
 {
+    public function loadExtension(
+        array $config, 
+        ContainerConfigurator $containerConfigurator, 
+        ContainerBuilder $containerBuilder,
+    ): void
+    {
+        $containerConfigurator->import('../config/services.yaml');
+    }
 }
