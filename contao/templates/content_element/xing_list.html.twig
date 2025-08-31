@@ -4,9 +4,11 @@
     {% if as_editor_view %}
             <span class="xing">{{ wildcard }}</span>
     {% else %}
-        <p>Put your content here.</p>
-        <div class="xing_image">
-            <a href="//www.xing.com/profile/<?= $xing['xingprofil']; ?>" <?= $xing['xingtarget']; ?>><?= $xing['xinglayout']; ?></a>
-        </div>
+        {% for xingrow in xing %}
+            <p>Put your content here.</p>
+            <div class="xing_image">
+                <a href="//www.xing.com/profile/{{ $xingrow['xingprofil'] }}" {{ $xingrow['xingtarget'] }}>{{ $xingrow['xinglayout']}}</a>
+            </div>
+        {% endfor %}
     {% endif %}
 {% endblock %}
