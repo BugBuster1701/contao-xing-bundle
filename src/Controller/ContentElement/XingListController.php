@@ -68,7 +68,7 @@ class XingListController extends AbstractContentElementController
 		$XingImage = new \BugBuster\Xing\XingImage(); // classes/XingImage.php
 
         foreach ($arrXings as $xingRow) {
-            $this->xing_images = $XingImage->getXingImageLink($xingRow['xinglayout'], $xingRow['xing_source']);
+            $this->xing_images = $XingImage->getXingImageLink($xingRow['xinglayout'], 'xing_local');
             if ($xingRow['xing_template'] == 'mod_xing_list_company')
 			{
 				$this->xing_images = preg_replace('/title="[^"]*"/', 'title="Company"', $this->xing_images);
