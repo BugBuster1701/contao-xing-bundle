@@ -53,9 +53,10 @@ class XingListController extends AbstractContentElementController
 
             return $template->getResponse();
         }
-        dump($model);
+        //dump($model);
         
-        $this->xing_category = StringUtil::deserialize($model->xing_categories, true);
+        //$this->xing_category = StringUtil::deserialize($model->xing_categories, true);
+        $this->xing_category = $model->xing_categories;
         if ($model->customTpl != '')
         {
             $this->xing_template = $model->customTpl;
@@ -65,21 +66,22 @@ class XingListController extends AbstractContentElementController
         {
             $arrXings = $this->connection->fetchAllAssociative("SELECT tl_xing.id AS id, xingprofil, xinglayout, xingtarget, title"
 												. " FROM tl_xing LEFT JOIN tl_xing_category ON (tl_xing_category.id=tl_xing.pid)"
-												. " WHERE pid IN(" . implode(',', $this->xing_category) . ")"
+												. " WHERE pid = " . $this->xing_category . ""
 												. " ORDER BY title, sorting");
         } else
         {
             $arrXings = $this->connection->fetchAllAssociative("SELECT tl_xing.id AS id, xingprofil, xinglayout, xingtarget, title"
 												. " FROM tl_xing LEFT JOIN tl_xing_category ON (tl_xing_category.id=tl_xing.pid)"
-												. " WHERE pid IN(" . implode(',', $this->xing_category) . ") AND published=1"
+												. " WHERE pid = " . $this->xing_category . " AND published=1"
 												. " ORDER BY title, sorting");
         }
         $arrXing = array();
 		$XingImage = new \BugBuster\Xing\XingImage(); // classes/XingImage.php
-
+        $template->set('category', '');
+        
         foreach ($arrXings as $xingRow) {
             $this->xing_images = $XingImage->getXingImageLink($xingRow['xinglayout'], 'xing_local');
-            if ($this->xing_template == 'mod_xing_list_company')
+            if (str_contains($this->xing_template,'xing_list_company'))
 			{
 				$this->xing_images = preg_replace('/title="[^"]*"/', 'title="Company"', $this->xing_images);
 			}
@@ -89,9 +91,9 @@ class XingListController extends AbstractContentElementController
 				'xinglayout' => $this->xing_images,
 				'xingtarget' => ($xingRow['xingtarget'] == '1') ? '' : ' target="_blank"'
 			);
+            $template->set('category', $xingRow['title']);
         }
-
-        $template->set('category', $xingRow['title']);
+        
 		$template->set('xing', $arrXing);            
         
         return $template->getResponse();
