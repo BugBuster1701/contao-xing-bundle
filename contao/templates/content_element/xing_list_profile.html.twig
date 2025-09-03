@@ -8,6 +8,7 @@
             <div class="xing_image">
                 <a href="//www.xing.com/profile/{{ xingrow['xingprofil'] }}" {{ xingrow['xingtarget']|raw }}>{{ xingrow['xinglayout']|raw }}</a>
             </div>
+            <div class="xing_profile">{{ xingrow['xingprofil'] |replace({'_': ' ' }) }}</div>
         {% endfor %}
     {% endif %}
 {% endblock %}

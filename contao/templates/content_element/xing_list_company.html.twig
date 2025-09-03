@@ -6,7 +6,7 @@
     {% else %}
         {% for xingrow in xing %}
             <div class="xing_image">
-                <a href="//www.xing.com/profile/{{ xingrow['xingprofil'] }}" {{ xingrow['xingtarget']|raw }}>{{ xingrow['xinglayout']|raw }}</a>
+                <a href="//www.xing.com/companies/{{ xingrow['xingprofil'] }}" {{ xingrow['xingtarget']|raw }}>{{ xingrow['xinglayout']|raw }}</a>
             </div>
         {% endfor %}
     {% endif %}
