@@ -52,7 +52,7 @@ class ModuleXingList extends Module
 	/**
 	 * Current version of the class.
 	 */
-	const XINGLIST_VERSION = '1.4.0';
+	const XINGLIST_VERSION = '1.4.1';
 
 	/**
 	 * Display a wildcard in the back end
@@ -149,5 +149,6 @@ class ModuleXingList extends Module
 		}
 		$this->Template->category = $objXing->title;
 		$this->Template->xing = $arrXing;
+		trigger_deprecation('bugbuster/contao-xing-bundle', '2.0', 'FE module is deprecated and will no longer work in Contao 6.');
 	} // compile
 } // class
