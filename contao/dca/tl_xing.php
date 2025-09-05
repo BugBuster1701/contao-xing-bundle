@@ -66,10 +66,12 @@ $GLOBALS['TL_DCA']['tl_xing'] = array
 			'delete',
 			'toggle' => array
 			(
+				'label'               => &$GLOBALS['TL_LANG']['tl_xing']['toggle'],
 				'href'                => 'act=toggle&amp;field=published',
 				'icon'                => 'visible.svg',
 				// 'showInHeader'        => true
-				'button_callback'     => array('BugBuster\Xing\DcaXing', 'toggleIcon')
+				'button_callback'     => array('BugBuster\Xing\DcaXing', 'toggleIcon'),
+				'primary'             => true
 			),
 			'show'
 		)
