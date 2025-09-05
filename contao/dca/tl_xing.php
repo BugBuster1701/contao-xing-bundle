@@ -70,7 +70,6 @@ $GLOBALS['TL_DCA']['tl_xing'] = array
 				'href'                => 'act=toggle&amp;field=published',
 				'icon'                => 'visible.svg',
 				// 'showInHeader'        => true
-				'button_callback'     => array('BugBuster\Xing\DcaXing', 'toggleIcon'),
 				'primary'             => true
 			),
 			'show'
