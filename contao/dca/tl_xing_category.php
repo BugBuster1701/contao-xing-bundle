@@ -68,6 +68,14 @@ $GLOBALS['TL_DCA']['tl_xing_category'] = array
 				'href'                => 'table=tl_xing',
 				'icon'                => 'edit.svg'
 			),
+			'editheader' => array
+			(
+				'label'               => &$GLOBALS['TL_LANG']['tl_xing_category']['editheader'],
+				'href'                => 'act=edit',
+				'icon'                => 'header.svg',
+				'attributes'          => 'class="edit-header"',
+				'primary'             => true
+			),
 			'copy' => array
 			(
 				'label'               => &$GLOBALS['TL_LANG']['tl_xing_category']['copy'],
