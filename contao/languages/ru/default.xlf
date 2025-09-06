@@ -3,7 +3,12 @@
     <body>
       <trans-unit id="XingList.warning">
         <source>ERROR: Contao Xing Bundle requires at least Contao 5.2</source>
-        
+      </trans-unit>
+      <trans-unit id="CTE.xing_list.0">
+        <source>XING list</source>
+      </trans-unit>
+      <trans-unit id="CTE.xing_list.1">
+        <source>With this content element you can list XING-Banners in the front end.</source>
       </trans-unit>
     </body>
   </file>
