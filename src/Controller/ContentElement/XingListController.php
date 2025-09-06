@@ -10,7 +10,6 @@ use Contao\CoreBundle\DependencyInjection\Attribute\AsContentElement;
 use Contao\CoreBundle\Twig\FragmentTemplate;
 use Contao\CoreBundle\Routing\ScopeMatcher;
 use Contao\CoreBundle\Security\Authentication\Token\TokenChecker;
-use Contao\StringUtil;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Doctrine\DBAL\Connection;
@@ -59,7 +58,7 @@ class XingListController extends AbstractContentElementController
         $this->xing_category = $model->xing_categories;
         if ($model->customTpl != '')
         {
-            $this->xing_template = $model->customTpl;
+            $this->xing_template = $model->customTpl ?? '';
         }
 
         if ($this->tokenChecker->hasBackendUser())

@@ -149,6 +149,6 @@ class ModuleXingList extends Module
 		}
 		$this->Template->category = $objXing->title;
 		$this->Template->xing = $arrXing;
-		trigger_deprecation('bugbuster/contao-xing-bundle', '2.0', 'FE module is deprecated and will no longer work in Contao 6.');
+		trigger_deprecation('bugbuster/contao-xing-bundle', '2.0', 'FE module is deprecated and will no longer work in Contao 6. Use the Content Element instead.');
 	} // compile
 } // class
