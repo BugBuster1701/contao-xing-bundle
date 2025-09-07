@@ -93,7 +93,8 @@ class XingListController extends AbstractContentElementController
             $template->set('category', $xingRow['title']);
         }
         
-		$template->set('xing', $arrXing);            
+		$template->set('xing', $arrXing);     
+        $template->set('searchable', false);       
         
         return $template->getResponse();
     }
