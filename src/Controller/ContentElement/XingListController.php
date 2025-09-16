@@ -2,100 +2,110 @@
 
 declare(strict_types=1);
 
+/*
+ * This file is part of a BugBuster Contao Bundle.
+ *
+ * @copyright  Glen Langer 2025 <http://contao.ninja>
+ * @author     Glen Langer (BugBuster)
+ * @package    Contao Xing Bundle
+ * @link       https://github.com/BugBuster1701/contao-xing-bundle
+ *
+ * @license    LGPL-3.0-or-later
+ * For the full copyright and license information,
+ * please view the LICENSE file that was distributed with this source code.
+ */
+
 namespace BugBuster\XingBundle\Controller\ContentElement;
 
+use BugBuster\Xing\XingImage;
 use Contao\ContentModel;
 use Contao\CoreBundle\Controller\ContentElement\AbstractContentElementController;
 use Contao\CoreBundle\DependencyInjection\Attribute\AsContentElement;
-use Contao\CoreBundle\Twig\FragmentTemplate;
 use Contao\CoreBundle\Routing\ScopeMatcher;
 use Contao\CoreBundle\Security\Authentication\Token\TokenChecker;
+use Contao\CoreBundle\Twig\FragmentTemplate;
+use Doctrine\DBAL\Connection;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Doctrine\DBAL\Connection;
 
 #[AsContentElement(category: 'media')]
 class XingListController extends AbstractContentElementController
 {
     /**
-	 * Template
-	 * @var string
-	 */
-	protected $xing_template = 'xing_list';
+     * Template.
+     *
+     * @var string
+     */
+    protected $xing_template = 'xing_list';
 
     /**
-	 * Xing Image Link
-	 * @var string
-	 */
-	protected $xing_images = '';
+     * Xing Image Link.
+     *
+     * @var string
+     */
+    protected $xing_images = '';
 
     /**
-	 * Category
-	 * @var array
-	 */
-	protected $xing_category = array();
-
+     * Category.
+     *
+     * @var array
+     */
+    protected $xing_category = [];
 
     public function __construct(
         private readonly Connection $connection,
         private readonly ScopeMatcher $scopeMatcher,
-        private readonly TokenChecker $tokenChecker
-        )
-    {
+        private readonly TokenChecker $tokenChecker,
+    ) {
     }
 
     protected function getResponse(FragmentTemplate $template, ContentModel $model, Request $request): Response
     {
-        if ($this->scopeMatcher->isBackendRequest($request)) 
-        {
+        if ($this->scopeMatcher->isBackendRequest($request)) {
             $template->set('wildcard', '### XING LIST ###');
 
             return $template->getResponse();
         }
-        //dump($model);
-        
-        //$this->xing_category = StringUtil::deserialize($model->xing_categories, true);
+        // dump($model);
+
+        // $this->xing_category = StringUtil::deserialize($model->xing_categories, true);
         $this->xing_category = $model->xing_categories;
-        if ($model->customTpl != '')
-        {
+        if ('' !== $model->customTpl) {
             $this->xing_template = $model->customTpl ?? '';
         }
 
-        if ($this->tokenChecker->hasBackendUser())
-        {
-            $arrXings = $this->connection->fetchAllAssociative("SELECT tl_xing.id AS id, xingprofil, xinglayout, xingtarget, title"
-												. " FROM tl_xing LEFT JOIN tl_xing_category ON (tl_xing_category.id=tl_xing.pid)"
-												. " WHERE pid = " . $this->xing_category . ""
-												. " ORDER BY title, sorting");
-        } else
-        {
-            $arrXings = $this->connection->fetchAllAssociative("SELECT tl_xing.id AS id, xingprofil, xinglayout, xingtarget, title"
-												. " FROM tl_xing LEFT JOIN tl_xing_category ON (tl_xing_category.id=tl_xing.pid)"
-												. " WHERE pid = " . $this->xing_category . " AND published=1"
-												. " ORDER BY title, sorting");
+        if ($this->tokenChecker->hasBackendUser()) {
+            $arrXings = $this->connection->fetchAllAssociative('SELECT tl_xing.id AS id, xingprofil, xinglayout, xingtarget, title'
+                                                .' FROM tl_xing LEFT JOIN tl_xing_category ON (tl_xing_category.id=tl_xing.pid)'
+                                                .' WHERE pid = '.$this->xing_category.''
+                                                .' ORDER BY title, sorting');
+        } else {
+            $arrXings = $this->connection->fetchAllAssociative('SELECT tl_xing.id AS id, xingprofil, xinglayout, xingtarget, title'
+                                                .' FROM tl_xing LEFT JOIN tl_xing_category ON (tl_xing_category.id=tl_xing.pid)'
+                                                .' WHERE pid = '.$this->xing_category.' AND published=1'
+                                                .' ORDER BY title, sorting');
         }
-        $arrXing = array();
-		$XingImage = new \BugBuster\Xing\XingImage(); // classes/XingImage.php
+        $arrXing = [];
+        $XingImage = new XingImage(); // classes/XingImage.php
         $template->set('category', '');
-        
+
         foreach ($arrXings as $xingRow) {
             $this->xing_images = $XingImage->getXingImageLink($xingRow['xinglayout'], 'xing_local');
-            if (str_contains($this->xing_template,'xing_list_company'))
-			{
-				$this->xing_images = preg_replace('/title="[^"]*"/', 'title="Company"', $this->xing_images);
-			}
-            $arrXing[] = array
-			(
-				'xingprofil' => trim($xingRow['xingprofil']),
-				'xinglayout' => $this->xing_images,
-				'xingtarget' => ($xingRow['xingtarget'] == '1') ? '' : ' target="_blank"'
-			);
+            if (str_contains($this->xing_template, 'xing_list_company')) {
+                $this->xing_images = preg_replace('/title="[^"]*"/', 'title="Company"', $this->xing_images);
+            }
+            $arrXing[] =
+            [
+                'xingprofil' => trim($xingRow['xingprofil']),
+                'xinglayout' => $this->xing_images,
+                'xingtarget' => '1' === $xingRow['xingtarget'] ? '' : ' target="_blank"',
+            ];
             $template->set('category', $xingRow['title']);
         }
-        
-		$template->set('xing', $arrXing);     
-        $template->set('searchable', false);       
-        
+
+        $template->set('xing', $arrXing);
+        $template->set('searchable', false);
+
         return $template->getResponse();
     }
 }
