@@ -1,0 +1,16 @@
+services:
+  _defaults:
+    autoconfigure: true
+    autowire: true
+    public: false
+
+  BugBuster\XingBundle\Controller\ContentElement\XingListController:
+    public: true
+    arguments:
+      - '@database_connection'
+      - '@contao.routing.scope_matcher'
+      - '@contao.security.token_checker'
+    tags:
+      -
+          name: contao.content_element
+          category: media

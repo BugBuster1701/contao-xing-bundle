@@ -61,3 +61,12 @@ resource_name          = master-tl_xing_category
 replace_edited_strings = false
 keep_translations      = false
 
+[o:bugbuster:p:contao-xing-bundle:r:master-tl_content]
+file_filter            = contao/languages/<lang>/tl_content.xlf
+source_file            = contao/languages/en/tl_content.xlf
+source_lang            = en
+type                   = XLIFF
+minimum_perc           = 0
+resource_name          = master-tl_content
+replace_edited_strings = false
+keep_translations      = false

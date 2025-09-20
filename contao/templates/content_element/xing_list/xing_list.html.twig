@@ -1,0 +1,13 @@
+{% extends "@Contao/content_element/_base.html.twig" %}
+
+{% block content %}
+    {% if as_editor_view %}
+            <span class="xing">{{ wildcard }}</span>
+    {% else %}
+        {% for xingrow in xing %}
+            <div class="xing_image">
+                <a href="//www.xing.com/profile/{{ xingrow['xingprofil'] }}" {{ xingrow['xingtarget']|raw }}>{{ xingrow['xinglayout']|raw }}</a>
+            </div>
+        {% endfor %}
+    {% endif %}
+{% endblock %}

@@ -13,6 +13,11 @@ Adding XING banner as a module, with categories.
 
 
 ## Notice
+For Contao 5.6+ please install version 2.0.x.<br>
+  When upgrading, please note [UPGRADE.md](UPGRADE.md)
+
+For Contao 5.4+ please install version 1.4.x.
+
 For Contao 5.3 please install version 1.3.x.
 
 For Contao 4.13 please install version 1.2.x.

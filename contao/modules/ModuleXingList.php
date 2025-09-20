@@ -3,7 +3,7 @@
 /*
  * This file is part of a BugBuster Contao Bundle.
  *
- * @copyright  Glen Langer 2024 <http://contao.ninja>
+ * @copyright  Glen Langer 2025 <http://contao.ninja>
  * @author     Glen Langer (BugBuster)
  * @package    Contao Xing Bundle
  * @link       https://github.com/BugBuster1701/contao-xing-bundle
@@ -52,7 +52,7 @@ class ModuleXingList extends Module
 	/**
 	 * Current version of the class.
 	 */
-	const XINGLIST_VERSION = '1.4.0';
+	const XINGLIST_VERSION = '1.4.1';
 
 	/**
 	 * Display a wildcard in the back end
@@ -149,5 +149,6 @@ class ModuleXingList extends Module
 		}
 		$this->Template->category = $objXing->title;
 		$this->Template->xing = $arrXing;
+		trigger_deprecation('bugbuster/contao-xing-bundle', '2.0', 'FE module is deprecated and will no longer work in Contao 6. Use the Content Element instead.');
 	} // compile
 } // class

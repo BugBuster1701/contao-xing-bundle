@@ -5,7 +5,7 @@ declare(strict_types=1);
 /*
  * This file is part of a BugBuster Contao Bundle.
  *
- * @copyright  Glen Langer 2024 <http://contao.ninja>
+ * @copyright  Glen Langer 2025 <http://contao.ninja>
  * @author     Glen Langer (BugBuster)
  * @package    Contao Xing Bundle
  * @link       https://github.com/BugBuster1701/contao-xing-bundle
@@ -17,6 +17,8 @@ declare(strict_types=1);
 
 namespace BugBuster\XingBundle;
 
+use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
 use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
 
 /**
@@ -24,4 +26,8 @@ use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
  */
 class BugBusterXingBundle extends AbstractBundle
 {
+    public function loadExtension(array $config, ContainerConfigurator $containerConfigurator, ContainerBuilder $containerBuilder,): void
+    {
+        $containerConfigurator->import('../config/services.yaml');
+    }
 }

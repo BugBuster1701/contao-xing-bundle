@@ -1,0 +1,18 @@
+<?xml version="1.0" ?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+    <file source-language="en" target-language="de" datatype="php" original="tl_content">
+        <body>
+            <trans-unit id="tl_content.xingcat_legend">
+                <source>Category</source>
+                <target>Kategorie</target>
+            </trans-unit>
+            <trans-unit id="tl_content.xing_categories.0">
+                <source>XING-Category</source>
+                <target>XING Kategorie</target>
+            </trans-unit>
+            <trans-unit id="tl_content.xing_categories.1">
+                <source>Please select the XING-Category you want to include.</source>
+                <target>Bitte wählen Sie die XING-Kategorie für das Content Element.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

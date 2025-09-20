@@ -3,7 +3,7 @@
 /*
  * This file is part of a BugBuster Contao Bundle.
  *
- * @copyright  Glen Langer 2024 <http://contao.ninja>
+ * @copyright  Glen Langer 2025 <http://contao.ninja>
  * @author     Glen Langer (BugBuster)
  * @package    Contao Xing Bundle
  * @link       https://github.com/BugBuster1701/contao-xing-bundle
@@ -66,7 +66,16 @@ $GLOBALS['TL_DCA']['tl_xing_category'] = array
 			(
 				'label'               => &$GLOBALS['TL_LANG']['tl_xing_category']['edit'],
 				'href'                => 'table=tl_xing',
-				'icon'                => 'edit.svg'
+				'icon'                => 'edit.svg',
+				'primary'             => true
+			),
+			'editheader' => array
+			(
+				'label'               => &$GLOBALS['TL_LANG']['tl_xing_category']['editheader'],
+				'href'                => 'act=edit',
+				'icon'                => 'header.svg',
+				'attributes'          => 'class="edit-header"',
+				'primary'             => true
 			),
 			'copy' => array
 			(

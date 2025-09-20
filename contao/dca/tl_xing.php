@@ -3,7 +3,7 @@
 /*
  * This file is part of a BugBuster Contao Bundle.
  *
- * @copyright  Glen Langer 2024 <http://contao.ninja>
+ * @copyright  Glen Langer 2025 <http://contao.ninja>
  * @author     Glen Langer (BugBuster)
  * @package    Contao Xing Bundle
  * @link       https://github.com/BugBuster1701/contao-xing-bundle
@@ -66,10 +66,11 @@ $GLOBALS['TL_DCA']['tl_xing'] = array
 			'delete',
 			'toggle' => array
 			(
+				'label'               => &$GLOBALS['TL_LANG']['tl_xing']['toggle'],
 				'href'                => 'act=toggle&amp;field=published',
 				'icon'                => 'visible.svg',
 				// 'showInHeader'        => true
-				'button_callback'     => array('BugBuster\Xing\DcaXing', 'toggleIcon')
+				'primary'             => true
 			),
 			'show'
 		)
