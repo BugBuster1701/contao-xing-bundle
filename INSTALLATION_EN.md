@@ -15,10 +15,14 @@ There are two types of installation.
 
 ## Installation via command line
 
-Installation in a Composer-based Contao 5.2+ Managed-Edition:
+Installation in a Composer-based Contao 5.3+ Managed-Edition:
 
 * `composer require "bugbuster/contao-xing-bundle"`
 * `php bin/console contao:migrate`
+
+(for Contao 5.6+ use "... contao-xing-bundle:^2.0")
+
+(for Contao 5.4+ use "... contao-xing-bundle:^1.4")
 
 (for Contao 5.3 use "... contao-xing-bundle:^1.3")
 
