@@ -70,3 +70,13 @@ minimum_perc           = 0
 resource_name          = master-tl_content
 replace_edited_strings = false
 keep_translations      = false
+
+[o:bugbuster:p:contao-xing-bundle:r:master-templates]
+file_filter            = src/translations/templates.<lang>.yaml
+source_file            = src/translations/templates.en.yaml
+source_lang            = en
+type                   = YAML_GENERIC
+minimum_perc           = 0
+resource_name          = master-templates
+replace_edited_strings = false
+keep_translations      = false
