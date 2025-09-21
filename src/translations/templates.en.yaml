@@ -1,4 +1,4 @@
-content_element/xinglist/xing_list: 'XING Banner, one linked graphic'
-content_element/xinglist/xing_list_profile: 'XING Banner, one linked graphic including the profile name'
-content_element/xinglist/xing_list_team: 'XING Banner, multiple linked grafics with profile name including the team name (category name)'
-content_element/xinglist/xing_list_company: 'XING Banner, one linked graphic for a company profile'
+content_element/xing_list/xing_list: 'XING Banner, one linked graphic'
+content_element/xing_list/xing_list_profile: 'XING Banner, one linked graphic including the profile name'
+content_element/xing_list/xing_list_team: 'XING Banner, multiple linked grafics with profile name including the team name (category name)'
+content_element/xing_list/xing_list_company: 'XING Banner, one linked graphic for a company profile'
