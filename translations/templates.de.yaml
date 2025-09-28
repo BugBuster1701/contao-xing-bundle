@@ -1,0 +1,4 @@
+content_element/xing_list/xing_list: 'XING-Banner, eine verlinkte Grafik'
+content_element/xing_list/xing_list_profile: 'XING-Banner, eine verlinkte Grafik, einschließlich des Profilnamens'
+content_element/xing_list/xing_list_team: 'XING-Banner, mehrere verlinkte Grafiken mit Profilnamen, einschließlich des Team-Names (Kategorie Name)'
+content_element/xing_list/xing_list_company: 'XING-Banner, eine verlinkte Grafik für ein Firmenprofil'
