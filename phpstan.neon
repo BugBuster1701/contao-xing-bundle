@@ -15,5 +15,4 @@ parameters:
 
     ignoreErrors:
         - identifier: missingType.iterableValue
-        # tests/BugBusterStardateBundleTest.php
         - identifier: method.alreadyNarrowedType
