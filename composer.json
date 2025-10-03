@@ -21,12 +21,21 @@
 	"require":{
 		"php": "^8.2",
 		"contao/core-bundle": ">=5.6.0,<5.7.0",
-		"symfony/framework-bundle": "^6.4 || ^7.0",
-		"symfony/http-kernel": "^6.4 || ^7.0"
+		"doctrine/dbal": "^3.7 || ^4.3",
+		"psr/log": "^1.1 || 2.0 || ^3.0",
+		"symfony/http-kernel": "^6.4 || ^7.0",
+		"symfony/dependency-injection": "^6.2 || ^7.0",
+		"symfony/http-foundation": "^6.4 || ^7.0",
+		"symfony/deprecation-contracts": "^3.0"
 	},
 	"require-dev": {
 		"contao/manager-plugin": "^2.3.1",
-		"phpunit/phpunit": "^8.5 || ^9.3"
+		"phpunit/phpunit": "^8.5 || ^9.3",
+        "phpstan/phpstan": "^2.0",
+        "phpstan/phpstan-doctrine": "^2.0",
+        "phpstan/phpstan-phpunit": "^2.0",
+        "phpstan/phpstan-symfony": "^2.0",
+		"shipmonk/composer-dependency-analyser": "^1.8"
 	},
 	"conflict": {
 		"contao/manager-plugin": "<2.0 || >=3.0"
@@ -57,6 +66,7 @@
 	},
     "scripts": {
         "all": [
+			"@phpstan",
             "@cs-fixer",
             "@unit-tests"
         ],
@@ -68,6 +78,8 @@
         "ecs": "@php tools/ecs/vendor/bin/ecs check src/ tests/ --config tools/ecs/config/default.php --fix --ansi",
         "ecs-legacy": "@php tools/ecs/vendor/bin/ecs check contao/ --config tools/ecs/config/legacy.php --fix --ansi",
         "ecs-template": "@php tools/ecs/vendor/bin/ecs check contao/templates --config tools/ecs/config/template.php --fix --ansi",
-        "unit-tests": "@php vendor/bin/phpunit --testdox --colors=always"
+        "unit-tests": "@php vendor/bin/phpunit --testdox --colors=always",
+		"depcheck": "@php vendor/bin/composer-dependency-analyser --config=depcheck.php",
+		"phpstan": "@php vendor/bin/phpstan analyze src/ tests/ --memory-limit=1G"
     }
 }

@@ -69,6 +69,7 @@ class XingListController extends AbstractContentElementController
         // dump($model);
 
         // $this->xing_category = StringUtil::deserialize($model->xing_categories, true);
+        /** @phpstan-ignore property.notFound */
         $this->xing_category = $model->xing_categories;
         if ('' !== $model->customTpl) {
             $this->xing_template = $model->customTpl ?? '';
